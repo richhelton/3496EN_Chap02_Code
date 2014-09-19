@@ -1,0 +1,16 @@
+F:\Rewrites3_June27_2014\3816_Chap02_NSB_Arch\ScaleOut\Orders.Messages\bin\Debug\Orders.Messages.dll
+F:\Rewrites3_June27_2014\3816_Chap02_NSB_Arch\ScaleOut\Orders.Messages\bin\Debug\Orders.Messages.pdb
+F:\Rewrites3_June27_2014\3816_Chap02_NSB_Arch\ScaleOut\Orders.Messages\bin\Debug\NServiceBus.dll
+F:\Rewrites3_June27_2014\3816_Chap02_NSB_Arch\ScaleOut\Orders.Messages\bin\Debug\NServiceBus.pdb
+F:\Rewrites3_June27_2014\3816_Chap02_NSB_Arch\ScaleOut\Orders.Messages\bin\Debug\NServiceBus.xml
+F:\Rewrites3_June27_2014\3816_Chap02_NSB_Arch\ScaleOut\Orders.Messages\obj\Debug\Orders.Messages.csprojResolveAssemblyReference.cache
+F:\Rewrites3_June27_2014\3816_Chap02_NSB_Arch\ScaleOut\Orders.Messages\obj\Debug\Orders.Messages.dll
+F:\Rewrites3_June27_2014\3816_Chap02_NSB_Arch\ScaleOut\Orders.Messages\obj\Debug\Orders.Messages.pdb
+F:\CodeFiles\3816EN_Chap02_Code\ScaleOut\Orders.Messages\bin\Debug\Orders.Messages.dll
+F:\CodeFiles\3816EN_Chap02_Code\ScaleOut\Orders.Messages\bin\Debug\Orders.Messages.pdb
+F:\CodeFiles\3816EN_Chap02_Code\ScaleOut\Orders.Messages\bin\Debug\NServiceBus.dll
+F:\CodeFiles\3816EN_Chap02_Code\ScaleOut\Orders.Messages\bin\Debug\NServiceBus.pdb
+F:\CodeFiles\3816EN_Chap02_Code\ScaleOut\Orders.Messages\bin\Debug\NServiceBus.xml
+F:\CodeFiles\3816EN_Chap02_Code\ScaleOut\Orders.Messages\obj\Debug\Orders.Messages.csprojResolveAssemblyReference.cache
+F:\CodeFiles\3816EN_Chap02_Code\ScaleOut\Orders.Messages\obj\Debug\Orders.Messages.dll
+F:\CodeFiles\3816EN_Chap02_Code\ScaleOut\Orders.Messages\obj\Debug\Orders.Messages.pdb

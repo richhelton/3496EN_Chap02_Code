@@ -1,0 +1,74 @@
+2014-07-12 10:43:27,784 [1] INFO  NServiceBus.Configure [(null)] <(null)> - Invocation of NServiceBus.IWantToRunBeforeConfiguration completed in 0.18 s
+2014-07-12 10:43:27,917 [1] INFO  NServiceBus.Configure [(null)] <(null)> - Invocation of NServiceBus.Config.INeedInitialization completed in 0.00 s
+2014-07-12 10:43:28,229 [1] INFO  NServiceBus.Licensing.LicenseManager [(null)] <(null)> - Expires on 07/30/2014 00:00:00
+2014-07-12 10:43:28,309 [1] INFO  NServiceBus.Configure [(null)] <(null)> - Invocation of NServiceBus.INeedInitialization completed in 0.39 s
+2014-07-12 10:43:28,410 [1] WARN  NServiceBus.ConfigureDistributor [(null)] <(null)> - 'MasterNodeConfig.Node' points to a local host name: [localhost]. Worker input address name is [Orders.Handler.e3a6c5e0-795b-4485-bdcb-f148f8b61654@WIN-UAUT16GPEQA]. It is randomly and uniquely generated to allow multiple workers working from the same machine as the Distributor.
+2014-07-12 10:43:30,146 [1] INFO  NServiceBus.Configure [(null)] <(null)> - Invocation of NServiceBus.IWantToRunBeforeConfigurationIsFinalized completed in 1.84 s
+2014-07-12 10:43:30,197 [1] INFO  NServiceBus.Features.Sagas [(null)] <(null)> - The saga feature was enabled but no saga implementations could be found. No need to enable the configured saga persister
+2014-07-12 10:43:30,255 [1] INFO  NServiceBus.Features.FeatureInitializer [(null)] <(null)> - Features: 
+Audit [4.6.1] - Enabled
+AutoSubscribe [4.6.1] - Enabled
+BinarySerialization [4.6.1] - Controlled by category Serializers
+BsonSerialization [4.6.1] - Controlled by category Serializers
+JsonSerialization [4.6.1] - Controlled by category Serializers
+XmlSerialization [4.6.1] - Controlled by category Serializers
+MsmqTransport [4.6.1] - Enabled
+Gateway [4.6.1] - Disabled
+TimeoutManager [4.6.1] - Disabled
+Sagas [4.6.1] - Enabled
+SecondLevelRetries [4.6.1] - Enabled
+StorageDrivenPublisher [4.6.1] - Enabled
+MessageDrivenSubscriptions [4.6.1] - Enabled
+
+2014-07-12 10:43:30,402 [1] INFO  NServiceBus.Features.FeatureInitializer [(null)] <(null)> - Feature categories: 
+   - Serializers
+       * BinarySerialization - Disabled
+       * BsonSerialization - Disabled
+       * JsonSerialization - Disabled
+       * XmlSerialization - Enabled
+
+2014-07-12 10:43:30,424 [1] INFO  NServiceBus.Unicast.Config.FinalizeUnicastBusConfiguration [(null)] <(null)> - Number of messages found: 5
+2014-07-12 10:43:30,430 [1] INFO  NServiceBus.Config.InfrastructureServices [(null)] <(null)> - Infrastructure service NServiceBus.AutomaticSubscriptions.IAutoSubscriptionStrategy was found in the container and will be used instead of the default
+2014-07-12 10:43:30,440 [1] INFO  NServiceBus.Configure [(null)] <(null)> - Invocation of NServiceBus.Config.IFinalizeConfiguration completed in 0.29 s
+2014-07-12 10:43:32,179 [1] INFO  NServiceBus.ConfigureRavenPersistence [(null)] <(null)> - Connection to RavenDB at http://localhost:8080 verified. Detected version: Product version: 2.0.3 / 5a4b7ea, Build version: 2375
+2014-07-12 10:43:32,584 [1] WARN  NServiceBus.Transports.Msmq.MsmqQueueCreator [(null)] <(null)> - Queue WIN-UAUT16GPEQA\private$\Orders.Handler.e3a6c5e0-795b-4485-bdcb-f148f8b61654 does not exist.
+2014-07-12 10:43:33,335 [1] INFO  NServiceBus.Installation.PerformanceMonitorUsersInstaller [(null)] <(null)> - Skipped adding user 'WIN-UAUT16GPEQA\Administrator' to group 'Performance Monitor Users' because the user is already in group.
+2014-07-12 10:43:33,342 [1] INFO  NServiceBus.Persistence.Raven.RavenUserInstaller [(null)] <(null)> - Adding user 'WIN-UAUT16GPEQA\Administrator' to raven. Instance:'http://localhost:8080', Database:'Orders.Handler'.
+2014-07-12 10:43:33,727 [1] INFO  NServiceBus.Unicast.Transport.TransportReceiver [(null)] <(null)> - Worker started, failures will be redirected to orders.handler@WIN-UAUT16GPEQA
+2014-07-12 11:34:37,625 [1] INFO  NServiceBus.Configure [(null)] <(null)> - Invocation of NServiceBus.IWantToRunBeforeConfiguration completed in 0.20 s
+2014-07-12 11:34:37,761 [1] INFO  NServiceBus.Configure [(null)] <(null)> - Invocation of NServiceBus.Config.INeedInitialization completed in 0.00 s
+2014-07-12 11:34:38,110 [1] INFO  NServiceBus.Licensing.LicenseManager [(null)] <(null)> - Expires on 07/30/2014 00:00:00
+2014-07-12 11:34:38,183 [1] INFO  NServiceBus.Configure [(null)] <(null)> - Invocation of NServiceBus.INeedInitialization completed in 0.42 s
+2014-07-12 11:34:38,347 [1] WARN  NServiceBus.ConfigureDistributor [(null)] <(null)> - 'MasterNodeConfig.Node' points to a local host name: [localhost]. Worker input address name is [Orders.Handler.acf90c45-1662-4e82-a21a-d155a909e1f6@WIN-UAUT16GPEQA]. It is randomly and uniquely generated to allow multiple workers working from the same machine as the Distributor.
+2014-07-12 11:34:40,101 [1] INFO  NServiceBus.Configure [(null)] <(null)> - Invocation of NServiceBus.IWantToRunBeforeConfigurationIsFinalized completed in 1.92 s
+2014-07-12 11:34:40,145 [1] INFO  NServiceBus.Features.Sagas [(null)] <(null)> - The saga feature was enabled but no saga implementations could be found. No need to enable the configured saga persister
+2014-07-12 11:34:40,202 [1] INFO  NServiceBus.Features.FeatureInitializer [(null)] <(null)> - Features: 
+Audit [4.6.1] - Enabled
+AutoSubscribe [4.6.1] - Enabled
+BinarySerialization [4.6.1] - Controlled by category Serializers
+BsonSerialization [4.6.1] - Controlled by category Serializers
+JsonSerialization [4.6.1] - Controlled by category Serializers
+XmlSerialization [4.6.1] - Controlled by category Serializers
+MsmqTransport [4.6.1] - Enabled
+Gateway [4.6.1] - Disabled
+TimeoutManager [4.6.1] - Disabled
+Sagas [4.6.1] - Enabled
+SecondLevelRetries [4.6.1] - Enabled
+StorageDrivenPublisher [4.6.1] - Enabled
+MessageDrivenSubscriptions [4.6.1] - Enabled
+
+2014-07-12 11:34:40,216 [1] INFO  NServiceBus.Features.FeatureInitializer [(null)] <(null)> - Feature categories: 
+   - Serializers
+       * BinarySerialization - Disabled
+       * BsonSerialization - Disabled
+       * JsonSerialization - Disabled
+       * XmlSerialization - Enabled
+
+2014-07-12 11:34:40,244 [1] INFO  NServiceBus.Unicast.Config.FinalizeUnicastBusConfiguration [(null)] <(null)> - Number of messages found: 5
+2014-07-12 11:34:40,249 [1] INFO  NServiceBus.Config.InfrastructureServices [(null)] <(null)> - Infrastructure service NServiceBus.AutomaticSubscriptions.IAutoSubscriptionStrategy was found in the container and will be used instead of the default
+2014-07-12 11:34:40,257 [1] INFO  NServiceBus.Configure [(null)] <(null)> - Invocation of NServiceBus.Config.IFinalizeConfiguration completed in 0.14 s
+2014-07-12 11:34:43,251 [1] INFO  NServiceBus.ConfigureRavenPersistence [(null)] <(null)> - Connection to RavenDB at http://localhost:8080 verified. Detected version: Product version: 2.0.3 / 5a4b7ea, Build version: 2375
+2014-07-12 11:34:43,805 [1] WARN  NServiceBus.Transports.Msmq.MsmqQueueCreator [(null)] <(null)> - Queue WIN-UAUT16GPEQA\private$\Orders.Handler.acf90c45-1662-4e82-a21a-d155a909e1f6 does not exist.
+2014-07-12 11:34:45,087 [1] INFO  NServiceBus.Installation.PerformanceMonitorUsersInstaller [(null)] <(null)> - Skipped adding user 'WIN-UAUT16GPEQA\Administrator' to group 'Performance Monitor Users' because the user is already in group.
+2014-07-12 11:34:45,091 [1] INFO  NServiceBus.Persistence.Raven.RavenUserInstaller [(null)] <(null)> - Adding user 'WIN-UAUT16GPEQA\Administrator' to raven. Instance:'http://localhost:8080', Database:'Orders.Handler'.
+2014-07-12 11:34:45,401 [1] INFO  NServiceBus.Unicast.Transport.TransportReceiver [(null)] <(null)> - Worker started, failures will be redirected to orders.handler@WIN-UAUT16GPEQA

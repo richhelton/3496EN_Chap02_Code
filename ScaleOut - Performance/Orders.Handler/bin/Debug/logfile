@@ -1,0 +1,288 @@
+2014-07-12 10:41:46,860 [1] INFO  NServiceBus.Configure [(null)] <(null)> - Invocation of NServiceBus.IWantToRunBeforeConfiguration completed in 0.17 s
+2014-07-12 10:41:46,993 [1] INFO  NServiceBus.Configure [(null)] <(null)> - Invocation of NServiceBus.Config.INeedInitialization completed in 0.00 s
+2014-07-12 10:41:47,328 [1] INFO  NServiceBus.Licensing.LicenseManager [(null)] <(null)> - Expires on 07/30/2014 00:00:00
+2014-07-12 10:41:47,410 [1] INFO  NServiceBus.Configure [(null)] <(null)> - Invocation of NServiceBus.INeedInitialization completed in 0.42 s
+2014-07-12 10:41:47,487 [1] INFO  NServiceBus.Distributor.Orders.Handler [(null)] <(null)> - Endpoint configured to host the distributor, applicative input queue re routed to Orders.Handler.worker@WIN-UAUT16GPEQA
+2014-07-12 10:41:48,957 [1] INFO  NServiceBus.Configure [(null)] <(null)> - Invocation of NServiceBus.IWantToRunBeforeConfigurationIsFinalized completed in 1.55 s
+2014-07-12 10:41:49,077 [1] INFO  NServiceBus.Features.Sagas [(null)] <(null)> - The saga feature was enabled but no saga implementations could be found. No need to enable the configured saga persister
+2014-07-12 10:41:49,084 [1] INFO  NServiceBus.Features.FeatureInitializer [(null)] <(null)> - Features: 
+Audit [4.6.1] - Enabled
+AutoSubscribe [4.6.1] - Enabled
+BinarySerialization [4.6.1] - Controlled by category Serializers
+BsonSerialization [4.6.1] - Controlled by category Serializers
+JsonSerialization [4.6.1] - Controlled by category Serializers
+XmlSerialization [4.6.1] - Controlled by category Serializers
+MsmqTransport [4.6.1] - Enabled
+Gateway [4.6.1] - Enabled
+TimeoutManager [4.6.1] - Enabled
+Sagas [4.6.1] - Enabled
+SecondLevelRetries [4.6.1] - Enabled
+StorageDrivenPublisher [4.6.1] - Enabled
+MessageDrivenSubscriptions [4.6.1] - Enabled
+
+2014-07-12 10:41:49,104 [1] INFO  NServiceBus.Features.FeatureInitializer [(null)] <(null)> - Feature categories: 
+   - Serializers
+       * BinarySerialization - Disabled
+       * BsonSerialization - Disabled
+       * JsonSerialization - Disabled
+       * XmlSerialization - Enabled
+
+2014-07-12 10:41:49,125 [1] INFO  NServiceBus.Unicast.Config.FinalizeUnicastBusConfiguration [(null)] <(null)> - Number of messages found: 5
+2014-07-12 10:41:49,133 [1] INFO  NServiceBus.Config.InfrastructureServices [(null)] <(null)> - Infrastructure service NServiceBus.AutomaticSubscriptions.IAutoSubscriptionStrategy was found in the container and will be used instead of the default
+2014-07-12 10:41:49,136 [1] INFO  NServiceBus.Configure [(null)] <(null)> - Invocation of NServiceBus.Config.IFinalizeConfiguration completed in 0.18 s
+2014-07-12 10:41:50,116 [1] INFO  NServiceBus.ConfigureRavenPersistence [(null)] <(null)> - Connection to RavenDB at http://localhost:8080 verified. Detected version: Product version: 2.0.3 / 5a4b7ea, Build version: 2375
+2014-07-12 10:41:51,946 [1] INFO  NServiceBus.Installation.PerformanceMonitorUsersInstaller [(null)] <(null)> - Skipped adding user 'WIN-UAUT16GPEQA\Administrator' to group 'Performance Monitor Users' because the user is already in group.
+2014-07-12 10:41:51,950 [1] INFO  NServiceBus.Persistence.Raven.RavenUserInstaller [(null)] <(null)> - Adding user 'WIN-UAUT16GPEQA\Administrator' to raven. Instance:'http://localhost:8080', Database:'Orders.Handler'.
+2014-07-12 10:41:52,417 [1] WARN  NServiceBus.Installation.GatewayHttpListenerInstaller [(null)] <(null)> - Failed to grant to grant user 'WIN-UAUT16GPEQA\Administrator' HttpListener permissions. Processing will continue. 
+Try running the following command from an admin console:
+netsh http add urlacl url=http://localhost:25899/ user="WIN-UAUT16GPEQA\Administrator"
+
+The error message from running the above command is: 
+Url reservation add failed, Error: 183
+Cannot create a file when that file already exists.
+2014-07-12 10:41:52,437 [1] INFO  NServiceBus.Unicast.Transport.TransportReceiver [(null)] <(null)> - Worker started, failures will be redirected to Orders.Handler@WIN-UAUT16GPEQA
+2014-07-12 10:41:53,023 [9] INFO  NServiceBus.Satellites.SatelliteLauncher [(null)] <(null)> - Started 7/7 NServiceBus.Distributor.DistributorReadyMessageProcessor, NServiceBus.Core, Version=4.6.0.0, Culture=neutral, PublicKeyToken=9fc386479f8a226c satellite
+2014-07-12 10:41:53,029 [8] INFO  NServiceBus.Satellites.SatelliteLauncher [(null)] <(null)> - Started 4/7 NServiceBus.Gateway.Sending.GatewaySender, NServiceBus.Core, Version=4.6.0.0, Culture=neutral, PublicKeyToken=9fc386479f8a226c satellite
+2014-07-12 10:41:53,031 [11] INFO  NServiceBus.Satellites.SatelliteLauncher [(null)] <(null)> - Started 2/7 NServiceBus.Timeout.Hosting.Windows.TimeoutDispatcherProcessor, NServiceBus.Core, Version=4.6.0.0, Culture=neutral, PublicKeyToken=9fc386479f8a226c satellite
+2014-07-12 10:41:53,034 [9] INFO  NServiceBus.Satellites.SatelliteLauncher [(null)] <(null)> - Started 3/7 NServiceBus.SecondLevelRetries.SecondLevelRetriesProcessor, NServiceBus.Core, Version=4.6.0.0, Culture=neutral, PublicKeyToken=9fc386479f8a226c satellite
+2014-07-12 10:41:53,048 [1] INFO  NServiceBus.Satellites.SatelliteLauncher [(null)] <(null)> - Started 1/7 NServiceBus.Timeout.Hosting.Windows.TimeoutMessageProcessor, NServiceBus.Core, Version=4.6.0.0, Culture=neutral, PublicKeyToken=9fc386479f8a226c satellite
+2014-07-12 10:41:53,111 [8] INFO  NServiceBus.Gateway.Receiving.GatewayReceiver [(null)] <(null)> - Receive channel started: http,http://localhost:25899/NumberOfWorkerThreads=1Default=True
+2014-07-12 10:41:53,115 [8] INFO  NServiceBus.Satellites.SatelliteLauncher [(null)] <(null)> - Started 5/7 NServiceBus.Gateway.Receiving.GatewayReceiver, NServiceBus.Core, Version=4.6.0.0, Culture=neutral, PublicKeyToken=9fc386479f8a226c satellite
+2014-07-12 10:41:53,118 [8] INFO  NServiceBus.Unicast.Transport.TransportReceiver [(null)] <(null)> - Worker started, failures will be redirected to Orders.Handler@WIN-UAUT16GPEQA
+2014-07-12 10:41:53,141 [8] INFO  NServiceBus.Satellites.SatelliteLauncher [(null)] <(null)> - Started 6/7 NServiceBus.Distributor.DistributorSatellite, NServiceBus.Core, Version=4.6.0.0, Culture=neutral, PublicKeyToken=9fc386479f8a226c satellite
+2014-07-12 10:41:53,402 [20] INFO  NServiceBus.Distributor.Orders.Handler [(null)] <(null)> - Worker Orders.Handler.worker@WIN-UAUT16GPEQA has started up, clearing previous reported capacity
+2014-07-12 10:41:53,406 [20] INFO  NServiceBus.Distributor.Orders.Handler [(null)] <(null)> - Worker Orders.Handler.worker@WIN-UAUT16GPEQA checked in with available capacity: 7
+2014-07-12 10:43:25,653 [1] INFO  NServiceBus.Configure [(null)] <(null)> - Invocation of NServiceBus.IWantToRunBeforeConfiguration completed in 0.28 s
+2014-07-12 10:43:25,821 [1] INFO  NServiceBus.Configure [(null)] <(null)> - Invocation of NServiceBus.Config.INeedInitialization completed in 0.00 s
+2014-07-12 10:43:26,153 [1] INFO  NServiceBus.Licensing.LicenseManager [(null)] <(null)> - Expires on 07/30/2014 00:00:00
+2014-07-12 10:43:26,287 [1] INFO  NServiceBus.Configure [(null)] <(null)> - Invocation of NServiceBus.INeedInitialization completed in 0.46 s
+2014-07-12 10:43:26,359 [1] INFO  NServiceBus.Distributor.Orders.Handler [(null)] <(null)> - Endpoint configured to host the distributor, applicative input queue re routed to Orders.Handler.worker@WIN-UAUT16GPEQA
+2014-07-12 10:43:28,912 [1] INFO  NServiceBus.Configure [(null)] <(null)> - Invocation of NServiceBus.IWantToRunBeforeConfigurationIsFinalized completed in 2.62 s
+2014-07-12 10:43:29,052 [1] INFO  NServiceBus.Features.Sagas [(null)] <(null)> - The saga feature was enabled but no saga implementations could be found. No need to enable the configured saga persister
+2014-07-12 10:43:29,059 [1] INFO  NServiceBus.Features.FeatureInitializer [(null)] <(null)> - Features: 
+Audit [4.6.1] - Enabled
+AutoSubscribe [4.6.1] - Enabled
+BinarySerialization [4.6.1] - Controlled by category Serializers
+BsonSerialization [4.6.1] - Controlled by category Serializers
+JsonSerialization [4.6.1] - Controlled by category Serializers
+XmlSerialization [4.6.1] - Controlled by category Serializers
+MsmqTransport [4.6.1] - Enabled
+Gateway [4.6.1] - Enabled
+TimeoutManager [4.6.1] - Enabled
+Sagas [4.6.1] - Enabled
+SecondLevelRetries [4.6.1] - Enabled
+StorageDrivenPublisher [4.6.1] - Enabled
+MessageDrivenSubscriptions [4.6.1] - Enabled
+
+2014-07-12 10:43:29,076 [1] INFO  NServiceBus.Features.FeatureInitializer [(null)] <(null)> - Feature categories: 
+   - Serializers
+       * BinarySerialization - Disabled
+       * BsonSerialization - Disabled
+       * JsonSerialization - Disabled
+       * XmlSerialization - Enabled
+
+2014-07-12 10:43:29,104 [1] INFO  NServiceBus.Unicast.Config.FinalizeUnicastBusConfiguration [(null)] <(null)> - Number of messages found: 5
+2014-07-12 10:43:29,110 [1] INFO  NServiceBus.Config.InfrastructureServices [(null)] <(null)> - Infrastructure service NServiceBus.AutomaticSubscriptions.IAutoSubscriptionStrategy was found in the container and will be used instead of the default
+2014-07-12 10:43:29,113 [1] INFO  NServiceBus.Configure [(null)] <(null)> - Invocation of NServiceBus.Config.IFinalizeConfiguration completed in 0.19 s
+2014-07-12 10:43:31,182 [1] INFO  NServiceBus.ConfigureRavenPersistence [(null)] <(null)> - Connection to RavenDB at http://localhost:8080 verified. Detected version: Product version: 2.0.3 / 5a4b7ea, Build version: 2375
+2014-07-12 10:43:33,615 [1] INFO  NServiceBus.Installation.PerformanceMonitorUsersInstaller [(null)] <(null)> - Skipped adding user 'WIN-UAUT16GPEQA\Administrator' to group 'Performance Monitor Users' because the user is already in group.
+2014-07-12 10:43:33,622 [1] INFO  NServiceBus.Persistence.Raven.RavenUserInstaller [(null)] <(null)> - Adding user 'WIN-UAUT16GPEQA\Administrator' to raven. Instance:'http://localhost:8080', Database:'Orders.Handler'.
+2014-07-12 10:43:34,231 [1] WARN  NServiceBus.Installation.GatewayHttpListenerInstaller [(null)] <(null)> - Failed to grant to grant user 'WIN-UAUT16GPEQA\Administrator' HttpListener permissions. Processing will continue. 
+Try running the following command from an admin console:
+netsh http add urlacl url=http://localhost:25899/ user="WIN-UAUT16GPEQA\Administrator"
+
+The error message from running the above command is: 
+Url reservation add failed, Error: 183
+Cannot create a file when that file already exists.
+2014-07-12 10:43:34,243 [1] INFO  NServiceBus.Unicast.Transport.TransportReceiver [(null)] <(null)> - Worker started, failures will be redirected to Orders.Handler@WIN-UAUT16GPEQA
+2014-07-12 10:43:35,087 [1] INFO  NServiceBus.Satellites.SatelliteLauncher [(null)] <(null)> - Started 1/7 NServiceBus.Timeout.Hosting.Windows.TimeoutMessageProcessor, NServiceBus.Core, Version=4.6.0.0, Culture=neutral, PublicKeyToken=9fc386479f8a226c satellite
+2014-07-12 10:43:35,098 [9] INFO  NServiceBus.Satellites.SatelliteLauncher [(null)] <(null)> - Started 7/7 NServiceBus.Distributor.DistributorReadyMessageProcessor, NServiceBus.Core, Version=4.6.0.0, Culture=neutral, PublicKeyToken=9fc386479f8a226c satellite
+2014-07-12 10:43:35,100 [8] INFO  NServiceBus.Satellites.SatelliteLauncher [(null)] <(null)> - Started 4/7 NServiceBus.Gateway.Sending.GatewaySender, NServiceBus.Core, Version=4.6.0.0, Culture=neutral, PublicKeyToken=9fc386479f8a226c satellite
+2014-07-12 10:43:35,107 [1] INFO  NServiceBus.Satellites.SatelliteLauncher [(null)] <(null)> - Started 3/7 NServiceBus.SecondLevelRetries.SecondLevelRetriesProcessor, NServiceBus.Core, Version=4.6.0.0, Culture=neutral, PublicKeyToken=9fc386479f8a226c satellite
+2014-07-12 10:43:35,122 [11] INFO  NServiceBus.Satellites.SatelliteLauncher [(null)] <(null)> - Started 2/7 NServiceBus.Timeout.Hosting.Windows.TimeoutDispatcherProcessor, NServiceBus.Core, Version=4.6.0.0, Culture=neutral, PublicKeyToken=9fc386479f8a226c satellite
+2014-07-12 10:43:35,550 [12] INFO  NServiceBus.Unicast.Transport.TransportReceiver [(null)] <(null)> - Failed to process message
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at NServiceBus.Transports.Msmq.WorkerAvailabilityManager.MsmqWorkerAvailabilityManager.ClearAvailabilityForWorker(Address address) in y:\BuildAgent\work\31f8c64a6e8a2d7c\src\NServiceBus.Core\Distributor\MsmqWorkerAvailabilityManager.cs:line 41
+   at NServiceBus.Distributor.DistributorReadyMessageProcessor.HandleControlMessage(TransportMessage controlMessage) in y:\BuildAgent\work\31f8c64a6e8a2d7c\src\NServiceBus.Core\Distributor\DistributorReadyMessageProcessor.cs:line 94
+   at NServiceBus.Distributor.DistributorReadyMessageProcessor.Handle(TransportMessage message) in y:\BuildAgent\work\31f8c64a6e8a2d7c\src\NServiceBus.Core\Distributor\DistributorReadyMessageProcessor.cs:line 43
+   at NServiceBus.Satellites.SatelliteLauncher.HandleMessageReceived(Object sender, TransportMessageReceivedEventArgs e, ISatellite satellite) in y:\BuildAgent\work\31f8c64a6e8a2d7c\src\NServiceBus.Core\Satellites\SatelliteLauncher.cs:line 92
+   at NServiceBus.Satellites.SatelliteLauncher.<>c__DisplayClass9.<StartSatellite>b__7(Object o, TransportMessageReceivedEventArgs e) in y:\BuildAgent\work\31f8c64a6e8a2d7c\src\NServiceBus.Core\Satellites\SatelliteLauncher.cs:line 107
+   at NServiceBus.Unicast.Transport.TransportReceiver.OnTransportMessageReceived(TransportMessage msg) in y:\BuildAgent\work\31f8c64a6e8a2d7c\src\NServiceBus.Core\Unicast\Transport\TransportReceiver.cs:line 453   at NServiceBus.Unicast.Transport.TransportReceiver.ProcessMessage(TransportMessage message) in y:\BuildAgent\work\31f8c64a6e8a2d7c\src\NServiceBus.Core\Unicast\Transport\TransportReceiver.cs:line 390
+   at NServiceBus.Unicast.Transport.TransportReceiver.TryProcess(TransportMessage message) in y:\BuildAgent\work\31f8c64a6e8a2d7c\src\NServiceBus.Core\Unicast\Transport\TransportReceiver.cs:line 260
+   at NServiceBus.Transports.Msmq.MsmqDequeueStrategy.ProcessMessage(TransportMessage message) in y:\BuildAgent\work\31f8c64a6e8a2d7c\src\NServiceBus.Core\Transports\Msmq\MsmqDequeueStrategy.cs:line 287
+   at NServiceBus.Transports.Msmq.MsmqDequeueStrategy.Action() in y:\BuildAgent\work\31f8c64a6e8a2d7c\src\NServiceBus.Core\Transports\Msmq\MsmqDequeueStrategy.cs:line 207
+2014-07-12 10:43:35,638 [9] INFO  NServiceBus.Gateway.Receiving.GatewayReceiver [(null)] <(null)> - Receive channel started: http,http://localhost:25899/NumberOfWorkerThreads=1Default=True
+2014-07-12 10:43:35,678 [14] INFO  NServiceBus.Unicast.Transport.TransportReceiver [(null)] <(null)> - Failed to process message
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at NServiceBus.Transports.Msmq.WorkerAvailabilityManager.MsmqWorkerAvailabilityManager.ClearAvailabilityForWorker(Address address) in y:\BuildAgent\work\31f8c64a6e8a2d7c\src\NServiceBus.Core\Distributor\MsmqWorkerAvailabilityManager.cs:line 41
+   at NServiceBus.Distributor.DistributorReadyMessageProcessor.HandleControlMessage(TransportMessage controlMessage) in y:\BuildAgent\work\31f8c64a6e8a2d7c\src\NServiceBus.Core\Distributor\DistributorReadyMessageProcessor.cs:line 94
+   at NServiceBus.Distributor.DistributorReadyMessageProcessor.Handle(TransportMessage message) in y:\BuildAgent\work\31f8c64a6e8a2d7c\src\NServiceBus.Core\Distributor\DistributorReadyMessageProcessor.cs:line 43
+   at NServiceBus.Satellites.SatelliteLauncher.HandleMessageReceived(Object sender, TransportMessageReceivedEventArgs e, ISatellite satellite) in y:\BuildAgent\work\31f8c64a6e8a2d7c\src\NServiceBus.Core\Satellites\SatelliteLauncher.cs:line 92
+   at NServiceBus.Satellites.SatelliteLauncher.<>c__DisplayClass9.<StartSatellite>b__7(Object o, TransportMessageReceivedEventArgs e) in y:\BuildAgent\work\31f8c64a6e8a2d7c\src\NServiceBus.Core\Satellites\SatelliteLauncher.cs:line 107
+   at NServiceBus.Unicast.Transport.TransportReceiver.OnTransportMessageReceived(TransportMessage msg) in y:\BuildAgent\work\31f8c64a6e8a2d7c\src\NServiceBus.Core\Unicast\Transport\TransportReceiver.cs:line 453   at NServiceBus.Unicast.Transport.TransportReceiver.ProcessMessage(TransportMessage message) in y:\BuildAgent\work\31f8c64a6e8a2d7c\src\NServiceBus.Core\Unicast\Transport\TransportReceiver.cs:line 390
+   at NServiceBus.Unicast.Transport.TransportReceiver.TryProcess(TransportMessage message) in y:\BuildAgent\work\31f8c64a6e8a2d7c\src\NServiceBus.Core\Unicast\Transport\TransportReceiver.cs:line 260
+   at NServiceBus.Transports.Msmq.MsmqDequeueStrategy.ProcessMessage(TransportMessage message) in y:\BuildAgent\work\31f8c64a6e8a2d7c\src\NServiceBus.Core\Transports\Msmq\MsmqDequeueStrategy.cs:line 287
+   at NServiceBus.Transports.Msmq.MsmqDequeueStrategy.Action() in y:\BuildAgent\work\31f8c64a6e8a2d7c\src\NServiceBus.Core\Transports\Msmq\MsmqDequeueStrategy.cs:line 207
+2014-07-12 10:43:35,773 [9] INFO  NServiceBus.Satellites.SatelliteLauncher [(null)] <(null)> - Started 5/7 NServiceBus.Gateway.Receiving.GatewayReceiver, NServiceBus.Core, Version=4.6.0.0, Culture=neutral, PublicKeyToken=9fc386479f8a226c satellite
+2014-07-12 10:43:35,838 [9] INFO  NServiceBus.Unicast.Transport.TransportReceiver [(null)] <(null)> - Worker started, failures will be redirected to Orders.Handler@WIN-UAUT16GPEQA
+2014-07-12 10:43:35,892 [17] INFO  NServiceBus.Unicast.Transport.TransportReceiver [(null)] <(null)> - Failed to process message
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at NServiceBus.Transports.Msmq.WorkerAvailabilityManager.MsmqWorkerAvailabilityManager.ClearAvailabilityForWorker(Address address) in y:\BuildAgent\work\31f8c64a6e8a2d7c\src\NServiceBus.Core\Distributor\MsmqWorkerAvailabilityManager.cs:line 41
+   at NServiceBus.Distributor.DistributorReadyMessageProcessor.HandleControlMessage(TransportMessage controlMessage) in y:\BuildAgent\work\31f8c64a6e8a2d7c\src\NServiceBus.Core\Distributor\DistributorReadyMessageProcessor.cs:line 94
+   at NServiceBus.Distributor.DistributorReadyMessageProcessor.Handle(TransportMessage message) in y:\BuildAgent\work\31f8c64a6e8a2d7c\src\NServiceBus.Core\Distributor\DistributorReadyMessageProcessor.cs:line 43
+   at NServiceBus.Satellites.SatelliteLauncher.HandleMessageReceived(Object sender, TransportMessageReceivedEventArgs e, ISatellite satellite) in y:\BuildAgent\work\31f8c64a6e8a2d7c\src\NServiceBus.Core\Satellites\SatelliteLauncher.cs:line 92
+   at NServiceBus.Satellites.SatelliteLauncher.<>c__DisplayClass9.<StartSatellite>b__7(Object o, TransportMessageReceivedEventArgs e) in y:\BuildAgent\work\31f8c64a6e8a2d7c\src\NServiceBus.Core\Satellites\SatelliteLauncher.cs:line 107
+   at NServiceBus.Unicast.Transport.TransportReceiver.OnTransportMessageReceived(TransportMessage msg) in y:\BuildAgent\work\31f8c64a6e8a2d7c\src\NServiceBus.Core\Unicast\Transport\TransportReceiver.cs:line 453   at NServiceBus.Unicast.Transport.TransportReceiver.ProcessMessage(TransportMessage message) in y:\BuildAgent\work\31f8c64a6e8a2d7c\src\NServiceBus.Core\Unicast\Transport\TransportReceiver.cs:line 390
+   at NServiceBus.Unicast.Transport.TransportReceiver.TryProcess(TransportMessage message) in y:\BuildAgent\work\31f8c64a6e8a2d7c\src\NServiceBus.Core\Unicast\Transport\TransportReceiver.cs:line 260
+   at NServiceBus.Transports.Msmq.MsmqDequeueStrategy.ProcessMessage(TransportMessage message) in y:\BuildAgent\work\31f8c64a6e8a2d7c\src\NServiceBus.Core\Transports\Msmq\MsmqDequeueStrategy.cs:line 287
+   at NServiceBus.Transports.Msmq.MsmqDequeueStrategy.Action() in y:\BuildAgent\work\31f8c64a6e8a2d7c\src\NServiceBus.Core\Transports\Msmq\MsmqDequeueStrategy.cs:line 207
+2014-07-12 10:43:35,913 [9] INFO  NServiceBus.Satellites.SatelliteLauncher [(null)] <(null)> - Started 6/7 NServiceBus.Distributor.DistributorSatellite, NServiceBus.Core, Version=4.6.0.0, Culture=neutral, PublicKeyToken=9fc386479f8a226c satellite
+2014-07-12 10:43:36,224 [18] INFO  NServiceBus.Unicast.Transport.TransportReceiver [(null)] <(null)> - Failed to process message
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at NServiceBus.Transports.Msmq.WorkerAvailabilityManager.MsmqWorkerAvailabilityManager.ClearAvailabilityForWorker(Address address) in y:\BuildAgent\work\31f8c64a6e8a2d7c\src\NServiceBus.Core\Distributor\MsmqWorkerAvailabilityManager.cs:line 41
+   at NServiceBus.Distributor.DistributorReadyMessageProcessor.HandleControlMessage(TransportMessage controlMessage) in y:\BuildAgent\work\31f8c64a6e8a2d7c\src\NServiceBus.Core\Distributor\DistributorReadyMessageProcessor.cs:line 94
+   at NServiceBus.Distributor.DistributorReadyMessageProcessor.Handle(TransportMessage message) in y:\BuildAgent\work\31f8c64a6e8a2d7c\src\NServiceBus.Core\Distributor\DistributorReadyMessageProcessor.cs:line 43
+   at NServiceBus.Satellites.SatelliteLauncher.HandleMessageReceived(Object sender, TransportMessageReceivedEventArgs e, ISatellite satellite) in y:\BuildAgent\work\31f8c64a6e8a2d7c\src\NServiceBus.Core\Satellites\SatelliteLauncher.cs:line 92
+   at NServiceBus.Satellites.SatelliteLauncher.<>c__DisplayClass9.<StartSatellite>b__7(Object o, TransportMessageReceivedEventArgs e) in y:\BuildAgent\work\31f8c64a6e8a2d7c\src\NServiceBus.Core\Satellites\SatelliteLauncher.cs:line 107
+   at NServiceBus.Unicast.Transport.TransportReceiver.OnTransportMessageReceived(TransportMessage msg) in y:\BuildAgent\work\31f8c64a6e8a2d7c\src\NServiceBus.Core\Unicast\Transport\TransportReceiver.cs:line 453   at NServiceBus.Unicast.Transport.TransportReceiver.ProcessMessage(TransportMessage message) in y:\BuildAgent\work\31f8c64a6e8a2d7c\src\NServiceBus.Core\Unicast\Transport\TransportReceiver.cs:line 390
+   at NServiceBus.Unicast.Transport.TransportReceiver.TryProcess(TransportMessage message) in y:\BuildAgent\work\31f8c64a6e8a2d7c\src\NServiceBus.Core\Unicast\Transport\TransportReceiver.cs:line 260
+   at NServiceBus.Transports.Msmq.MsmqDequeueStrategy.ProcessMessage(TransportMessage message) in y:\BuildAgent\work\31f8c64a6e8a2d7c\src\NServiceBus.Core\Transports\Msmq\MsmqDequeueStrategy.cs:line 287
+   at NServiceBus.Transports.Msmq.MsmqDequeueStrategy.Action() in y:\BuildAgent\work\31f8c64a6e8a2d7c\src\NServiceBus.Core\Transports\Msmq\MsmqDequeueStrategy.cs:line 207
+2014-07-12 10:43:36,246 [19] WARN  NServiceBus.Faults.Forwarder.FaultManager [(null)] <(null)> - Message with 'fc7f5102-888a-461a-99a1-a36600b0c286' id has failed FLR and will be handed over to SLR for retry attempt 1.
+2014-07-12 10:43:36,299 [23] WARN  NServiceBus.Faults.Forwarder.FaultManager [(null)] <(null)> - Message with '08c65e01-c13e-43e0-89f5-a36600b0c3aa' id has failed FLR and will be handed over to SLR for retry attempt 1.
+2014-07-12 10:43:36,448 [25] INFO  NServiceBus.Distributor.Orders.Handler [(null)] <(null)> - Worker Orders.Handler.worker@WIN-UAUT16GPEQA has started up, clearing previous reported capacity
+2014-07-12 10:43:36,473 [25] INFO  NServiceBus.Distributor.Orders.Handler [(null)] <(null)> - Worker Orders.Handler.worker@WIN-UAUT16GPEQA checked in with available capacity: 7
+2014-07-12 10:43:47,064 [21] INFO  NServiceBus.Distributor.Orders.Handler [(null)] <(null)> - Worker Orders.Handler.e3a6c5e0-795b-4485-bdcb-f148f8b61654@WIN-UAUT16GPEQA has started up, clearing previous reported capacity
+2014-07-12 10:43:47,066 [21] INFO  NServiceBus.Distributor.Orders.Handler [(null)] <(null)> - Worker Orders.Handler.e3a6c5e0-795b-4485-bdcb-f148f8b61654@WIN-UAUT16GPEQA checked in with available capacity: 1
+2014-07-12 10:43:47,074 [22] INFO  NServiceBus.Distributor.Orders.Handler [(null)] <(null)> - Worker Orders.Handler.181d2254-53ef-4245-bccd-8a82cf8aa2b1@WIN-UAUT16GPEQA has started up, clearing previous reported capacity
+2014-07-12 10:43:47,075 [22] INFO  NServiceBus.Distributor.Orders.Handler [(null)] <(null)> - Worker Orders.Handler.181d2254-53ef-4245-bccd-8a82cf8aa2b1@WIN-UAUT16GPEQA checked in with available capacity: 1
+2014-07-12 10:47:18,566 [3] INFO  NServiceBus.Distributor.Orders.Handler [(null)] <(null)> - Worker Orders.Handler.worker@WIN-UAUT16GPEQA checked in with available capacity: 1
+2014-07-12 10:47:18,580 [22] INFO  NServiceBus.Distributor.Orders.Handler [(null)] <(null)> - Worker Orders.Handler.worker@WIN-UAUT16GPEQA checked in with available capacity: 1
+2014-07-12 11:34:35,483 [1] INFO  NServiceBus.Configure [(null)] <(null)> - Invocation of NServiceBus.IWantToRunBeforeConfiguration completed in 0.19 s
+2014-07-12 11:34:35,634 [1] INFO  NServiceBus.Configure [(null)] <(null)> - Invocation of NServiceBus.Config.INeedInitialization completed in 0.00 s
+2014-07-12 11:34:36,063 [1] INFO  NServiceBus.Licensing.LicenseManager [(null)] <(null)> - Expires on 07/30/2014 00:00:00
+2014-07-12 11:34:36,142 [1] INFO  NServiceBus.Configure [(null)] <(null)> - Invocation of NServiceBus.INeedInitialization completed in 0.51 s
+2014-07-12 11:34:36,212 [1] INFO  NServiceBus.Distributor.Orders.Handler [(null)] <(null)> - Endpoint configured to host the distributor, applicative input queue re routed to Orders.Handler.worker@WIN-UAUT16GPEQA
+2014-07-12 11:34:39,718 [1] INFO  NServiceBus.Configure [(null)] <(null)> - Invocation of NServiceBus.IWantToRunBeforeConfigurationIsFinalized completed in 3.57 s
+2014-07-12 11:34:39,913 [1] INFO  NServiceBus.Features.Sagas [(null)] <(null)> - The saga feature was enabled but no saga implementations could be found. No need to enable the configured saga persister
+2014-07-12 11:34:39,923 [1] INFO  NServiceBus.Features.FeatureInitializer [(null)] <(null)> - Features: 
+Audit [4.6.1] - Enabled
+AutoSubscribe [4.6.1] - Enabled
+BinarySerialization [4.6.1] - Controlled by category Serializers
+BsonSerialization [4.6.1] - Controlled by category Serializers
+JsonSerialization [4.6.1] - Controlled by category Serializers
+XmlSerialization [4.6.1] - Controlled by category Serializers
+MsmqTransport [4.6.1] - Enabled
+Gateway [4.6.1] - Enabled
+TimeoutManager [4.6.1] - Enabled
+Sagas [4.6.1] - Enabled
+SecondLevelRetries [4.6.1] - Enabled
+StorageDrivenPublisher [4.6.1] - Enabled
+MessageDrivenSubscriptions [4.6.1] - Enabled
+
+2014-07-12 11:34:39,947 [1] INFO  NServiceBus.Features.FeatureInitializer [(null)] <(null)> - Feature categories: 
+   - Serializers
+       * BinarySerialization - Disabled
+       * BsonSerialization - Disabled
+       * JsonSerialization - Disabled
+       * XmlSerialization - Enabled
+
+2014-07-12 11:34:39,968 [1] INFO  NServiceBus.Unicast.Config.FinalizeUnicastBusConfiguration [(null)] <(null)> - Number of messages found: 5
+2014-07-12 11:34:39,974 [1] INFO  NServiceBus.Config.InfrastructureServices [(null)] <(null)> - Infrastructure service NServiceBus.AutomaticSubscriptions.IAutoSubscriptionStrategy was found in the container and will be used instead of the default
+2014-07-12 11:34:39,985 [1] INFO  NServiceBus.Configure [(null)] <(null)> - Invocation of NServiceBus.Config.IFinalizeConfiguration completed in 0.26 s
+2014-07-12 11:34:42,253 [1] INFO  NServiceBus.ConfigureRavenPersistence [(null)] <(null)> - Connection to RavenDB at http://localhost:8080 verified. Detected version: Product version: 2.0.3 / 5a4b7ea, Build version: 2375
+2014-07-12 11:34:44,830 [1] INFO  NServiceBus.Installation.PerformanceMonitorUsersInstaller [(null)] <(null)> - Skipped adding user 'WIN-UAUT16GPEQA\Administrator' to group 'Performance Monitor Users' because the user is already in group.
+2014-07-12 11:34:44,834 [1] INFO  NServiceBus.Persistence.Raven.RavenUserInstaller [(null)] <(null)> - Adding user 'WIN-UAUT16GPEQA\Administrator' to raven. Instance:'http://localhost:8080', Database:'Orders.Handler'.
+2014-07-12 11:34:45,455 [1] WARN  NServiceBus.Installation.GatewayHttpListenerInstaller [(null)] <(null)> - Failed to grant to grant user 'WIN-UAUT16GPEQA\Administrator' HttpListener permissions. Processing will continue. 
+Try running the following command from an admin console:
+netsh http add urlacl url=http://localhost:25899/ user="WIN-UAUT16GPEQA\Administrator"
+
+The error message from running the above command is: 
+Url reservation add failed, Error: 183
+Cannot create a file when that file already exists.
+2014-07-12 11:34:45,468 [1] INFO  NServiceBus.Unicast.Transport.TransportReceiver [(null)] <(null)> - Worker started, failures will be redirected to Orders.Handler@WIN-UAUT16GPEQA
+2014-07-12 11:34:46,405 [1] INFO  NServiceBus.Satellites.SatelliteLauncher [(null)] <(null)> - Started 1/7 NServiceBus.Timeout.Hosting.Windows.TimeoutMessageProcessor, NServiceBus.Core, Version=4.6.0.0, Culture=neutral, PublicKeyToken=9fc386479f8a226c satellite
+2014-07-12 11:34:46,409 [10] INFO  NServiceBus.Satellites.SatelliteLauncher [(null)] <(null)> - Started 7/7 NServiceBus.Distributor.DistributorReadyMessageProcessor, NServiceBus.Core, Version=4.6.0.0, Culture=neutral, PublicKeyToken=9fc386479f8a226c satellite
+2014-07-12 11:34:46,410 [12] INFO  NServiceBus.Satellites.SatelliteLauncher [(null)] <(null)> - Started 4/7 NServiceBus.Gateway.Sending.GatewaySender, NServiceBus.Core, Version=4.6.0.0, Culture=neutral, PublicKeyToken=9fc386479f8a226c satellite
+2014-07-12 11:34:46,516 [9] INFO  NServiceBus.Satellites.SatelliteLauncher [(null)] <(null)> - Started 2/7 NServiceBus.Timeout.Hosting.Windows.TimeoutDispatcherProcessor, NServiceBus.Core, Version=4.6.0.0, Culture=neutral, PublicKeyToken=9fc386479f8a226c satellite
+2014-07-12 11:34:46,886 [14] INFO  NServiceBus.Unicast.Transport.TransportReceiver [(null)] <(null)> - Failed to process message
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at NServiceBus.Transports.Msmq.WorkerAvailabilityManager.MsmqWorkerAvailabilityManager.ClearAvailabilityForWorker(Address address) in y:\BuildAgent\work\31f8c64a6e8a2d7c\src\NServiceBus.Core\Distributor\MsmqWorkerAvailabilityManager.cs:line 41
+   at NServiceBus.Distributor.DistributorReadyMessageProcessor.HandleControlMessage(TransportMessage controlMessage) in y:\BuildAgent\work\31f8c64a6e8a2d7c\src\NServiceBus.Core\Distributor\DistributorReadyMessageProcessor.cs:line 94
+   at NServiceBus.Distributor.DistributorReadyMessageProcessor.Handle(TransportMessage message) in y:\BuildAgent\work\31f8c64a6e8a2d7c\src\NServiceBus.Core\Distributor\DistributorReadyMessageProcessor.cs:line 43
+   at NServiceBus.Satellites.SatelliteLauncher.HandleMessageReceived(Object sender, TransportMessageReceivedEventArgs e, ISatellite satellite) in y:\BuildAgent\work\31f8c64a6e8a2d7c\src\NServiceBus.Core\Satellites\SatelliteLauncher.cs:line 92
+   at NServiceBus.Satellites.SatelliteLauncher.<>c__DisplayClass9.<StartSatellite>b__7(Object o, TransportMessageReceivedEventArgs e) in y:\BuildAgent\work\31f8c64a6e8a2d7c\src\NServiceBus.Core\Satellites\SatelliteLauncher.cs:line 107
+   at NServiceBus.Unicast.Transport.TransportReceiver.OnTransportMessageReceived(TransportMessage msg) in y:\BuildAgent\work\31f8c64a6e8a2d7c\src\NServiceBus.Core\Unicast\Transport\TransportReceiver.cs:line 453   at NServiceBus.Unicast.Transport.TransportReceiver.ProcessMessage(TransportMessage message) in y:\BuildAgent\work\31f8c64a6e8a2d7c\src\NServiceBus.Core\Unicast\Transport\TransportReceiver.cs:line 390
+   at NServiceBus.Unicast.Transport.TransportReceiver.TryProcess(TransportMessage message) in y:\BuildAgent\work\31f8c64a6e8a2d7c\src\NServiceBus.Core\Unicast\Transport\TransportReceiver.cs:line 260
+   at NServiceBus.Transports.Msmq.MsmqDequeueStrategy.ProcessMessage(TransportMessage message) in y:\BuildAgent\work\31f8c64a6e8a2d7c\src\NServiceBus.Core\Transports\Msmq\MsmqDequeueStrategy.cs:line 287
+   at NServiceBus.Transports.Msmq.MsmqDequeueStrategy.Action() in y:\BuildAgent\work\31f8c64a6e8a2d7c\src\NServiceBus.Core\Transports\Msmq\MsmqDequeueStrategy.cs:line 207
+2014-07-12 11:34:46,974 [15] INFO  NServiceBus.Unicast.Transport.TransportReceiver [(null)] <(null)> - Failed to process message
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at NServiceBus.Transports.Msmq.WorkerAvailabilityManager.MsmqWorkerAvailabilityManager.ClearAvailabilityForWorker(Address address) in y:\BuildAgent\work\31f8c64a6e8a2d7c\src\NServiceBus.Core\Distributor\MsmqWorkerAvailabilityManager.cs:line 41
+   at NServiceBus.Distributor.DistributorReadyMessageProcessor.HandleControlMessage(TransportMessage controlMessage) in y:\BuildAgent\work\31f8c64a6e8a2d7c\src\NServiceBus.Core\Distributor\DistributorReadyMessageProcessor.cs:line 94
+   at NServiceBus.Distributor.DistributorReadyMessageProcessor.Handle(TransportMessage message) in y:\BuildAgent\work\31f8c64a6e8a2d7c\src\NServiceBus.Core\Distributor\DistributorReadyMessageProcessor.cs:line 43
+   at NServiceBus.Satellites.SatelliteLauncher.HandleMessageReceived(Object sender, TransportMessageReceivedEventArgs e, ISatellite satellite) in y:\BuildAgent\work\31f8c64a6e8a2d7c\src\NServiceBus.Core\Satellites\SatelliteLauncher.cs:line 92
+   at NServiceBus.Satellites.SatelliteLauncher.<>c__DisplayClass9.<StartSatellite>b__7(Object o, TransportMessageReceivedEventArgs e) in y:\BuildAgent\work\31f8c64a6e8a2d7c\src\NServiceBus.Core\Satellites\SatelliteLauncher.cs:line 107
+   at NServiceBus.Unicast.Transport.TransportReceiver.OnTransportMessageReceived(TransportMessage msg) in y:\BuildAgent\work\31f8c64a6e8a2d7c\src\NServiceBus.Core\Unicast\Transport\TransportReceiver.cs:line 453   at NServiceBus.Unicast.Transport.TransportReceiver.ProcessMessage(TransportMessage message) in y:\BuildAgent\work\31f8c64a6e8a2d7c\src\NServiceBus.Core\Unicast\Transport\TransportReceiver.cs:line 390
+   at NServiceBus.Unicast.Transport.TransportReceiver.TryProcess(TransportMessage message) in y:\BuildAgent\work\31f8c64a6e8a2d7c\src\NServiceBus.Core\Unicast\Transport\TransportReceiver.cs:line 260
+   at NServiceBus.Transports.Msmq.MsmqDequeueStrategy.ProcessMessage(TransportMessage message) in y:\BuildAgent\work\31f8c64a6e8a2d7c\src\NServiceBus.Core\Transports\Msmq\MsmqDequeueStrategy.cs:line 287
+   at NServiceBus.Transports.Msmq.MsmqDequeueStrategy.Action() in y:\BuildAgent\work\31f8c64a6e8a2d7c\src\NServiceBus.Core\Transports\Msmq\MsmqDequeueStrategy.cs:line 207
+2014-07-12 11:34:47,217 [16] INFO  NServiceBus.Unicast.Transport.TransportReceiver [(null)] <(null)> - Failed to process message
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at NServiceBus.Transports.Msmq.WorkerAvailabilityManager.MsmqWorkerAvailabilityManager.ClearAvailabilityForWorker(Address address) in y:\BuildAgent\work\31f8c64a6e8a2d7c\src\NServiceBus.Core\Distributor\MsmqWorkerAvailabilityManager.cs:line 41
+   at NServiceBus.Distributor.DistributorReadyMessageProcessor.HandleControlMessage(TransportMessage controlMessage) in y:\BuildAgent\work\31f8c64a6e8a2d7c\src\NServiceBus.Core\Distributor\DistributorReadyMessageProcessor.cs:line 94
+   at NServiceBus.Distributor.DistributorReadyMessageProcessor.Handle(TransportMessage message) in y:\BuildAgent\work\31f8c64a6e8a2d7c\src\NServiceBus.Core\Distributor\DistributorReadyMessageProcessor.cs:line 43
+   at NServiceBus.Satellites.SatelliteLauncher.HandleMessageReceived(Object sender, TransportMessageReceivedEventArgs e, ISatellite satellite) in y:\BuildAgent\work\31f8c64a6e8a2d7c\src\NServiceBus.Core\Satellites\SatelliteLauncher.cs:line 92
+   at NServiceBus.Satellites.SatelliteLauncher.<>c__DisplayClass9.<StartSatellite>b__7(Object o, TransportMessageReceivedEventArgs e) in y:\BuildAgent\work\31f8c64a6e8a2d7c\src\NServiceBus.Core\Satellites\SatelliteLauncher.cs:line 107
+   at NServiceBus.Unicast.Transport.TransportReceiver.OnTransportMessageReceived(TransportMessage msg) in y:\BuildAgent\work\31f8c64a6e8a2d7c\src\NServiceBus.Core\Unicast\Transport\TransportReceiver.cs:line 453   at NServiceBus.Unicast.Transport.TransportReceiver.ProcessMessage(TransportMessage message) in y:\BuildAgent\work\31f8c64a6e8a2d7c\src\NServiceBus.Core\Unicast\Transport\TransportReceiver.cs:line 390
+   at NServiceBus.Unicast.Transport.TransportReceiver.TryProcess(TransportMessage message) in y:\BuildAgent\work\31f8c64a6e8a2d7c\src\NServiceBus.Core\Unicast\Transport\TransportReceiver.cs:line 260
+   at NServiceBus.Transports.Msmq.MsmqDequeueStrategy.ProcessMessage(TransportMessage message) in y:\BuildAgent\work\31f8c64a6e8a2d7c\src\NServiceBus.Core\Transports\Msmq\MsmqDequeueStrategy.cs:line 287
+   at NServiceBus.Transports.Msmq.MsmqDequeueStrategy.Action() in y:\BuildAgent\work\31f8c64a6e8a2d7c\src\NServiceBus.Core\Transports\Msmq\MsmqDequeueStrategy.cs:line 207
+2014-07-12 11:34:47,299 [17] INFO  NServiceBus.Unicast.Transport.TransportReceiver [(null)] <(null)> - Failed to process message
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at NServiceBus.Transports.Msmq.WorkerAvailabilityManager.MsmqWorkerAvailabilityManager.ClearAvailabilityForWorker(Address address) in y:\BuildAgent\work\31f8c64a6e8a2d7c\src\NServiceBus.Core\Distributor\MsmqWorkerAvailabilityManager.cs:line 41
+   at NServiceBus.Distributor.DistributorReadyMessageProcessor.HandleControlMessage(TransportMessage controlMessage) in y:\BuildAgent\work\31f8c64a6e8a2d7c\src\NServiceBus.Core\Distributor\DistributorReadyMessageProcessor.cs:line 94
+   at NServiceBus.Distributor.DistributorReadyMessageProcessor.Handle(TransportMessage message) in y:\BuildAgent\work\31f8c64a6e8a2d7c\src\NServiceBus.Core\Distributor\DistributorReadyMessageProcessor.cs:line 43
+   at NServiceBus.Satellites.SatelliteLauncher.HandleMessageReceived(Object sender, TransportMessageReceivedEventArgs e, ISatellite satellite) in y:\BuildAgent\work\31f8c64a6e8a2d7c\src\NServiceBus.Core\Satellites\SatelliteLauncher.cs:line 92
+   at NServiceBus.Satellites.SatelliteLauncher.<>c__DisplayClass9.<StartSatellite>b__7(Object o, TransportMessageReceivedEventArgs e) in y:\BuildAgent\work\31f8c64a6e8a2d7c\src\NServiceBus.Core\Satellites\SatelliteLauncher.cs:line 107
+   at NServiceBus.Unicast.Transport.TransportReceiver.OnTransportMessageReceived(TransportMessage msg) in y:\BuildAgent\work\31f8c64a6e8a2d7c\src\NServiceBus.Core\Unicast\Transport\TransportReceiver.cs:line 453   at NServiceBus.Unicast.Transport.TransportReceiver.ProcessMessage(TransportMessage message) in y:\BuildAgent\work\31f8c64a6e8a2d7c\src\NServiceBus.Core\Unicast\Transport\TransportReceiver.cs:line 390
+   at NServiceBus.Unicast.Transport.TransportReceiver.TryProcess(TransportMessage message) in y:\BuildAgent\work\31f8c64a6e8a2d7c\src\NServiceBus.Core\Unicast\Transport\TransportReceiver.cs:line 260
+   at NServiceBus.Transports.Msmq.MsmqDequeueStrategy.ProcessMessage(TransportMessage message) in y:\BuildAgent\work\31f8c64a6e8a2d7c\src\NServiceBus.Core\Transports\Msmq\MsmqDequeueStrategy.cs:line 287
+   at NServiceBus.Transports.Msmq.MsmqDequeueStrategy.Action() in y:\BuildAgent\work\31f8c64a6e8a2d7c\src\NServiceBus.Core\Transports\Msmq\MsmqDequeueStrategy.cs:line 207
+2014-07-12 11:34:47,372 [19] WARN  NServiceBus.Faults.Forwarder.FaultManager [(null)] <(null)> - Message with 'dc2497bd-97a2-4e6c-9545-a36600bed3a5' id has failed FLR and will be handed over to SLR for retry attempt 1.
+2014-07-12 11:34:47,372 [18] WARN  NServiceBus.Faults.Forwarder.FaultManager [(null)] <(null)> - Message with 'c44eaaf5-3188-4e99-950d-a36600bed350' id has failed FLR and will be handed over to SLR for retry attempt 1.
+2014-07-12 11:34:47,815 [1] INFO  NServiceBus.Satellites.SatelliteLauncher [(null)] <(null)> - Started 3/7 NServiceBus.SecondLevelRetries.SecondLevelRetriesProcessor, NServiceBus.Core, Version=4.6.0.0, Culture=neutral, PublicKeyToken=9fc386479f8a226c satellite
+2014-07-12 11:34:47,953 [10] INFO  NServiceBus.Gateway.Receiving.GatewayReceiver [(null)] <(null)> - Receive channel started: http,http://localhost:25899/NumberOfWorkerThreads=1Default=True
+2014-07-12 11:34:47,956 [10] INFO  NServiceBus.Satellites.SatelliteLauncher [(null)] <(null)> - Started 5/7 NServiceBus.Gateway.Receiving.GatewayReceiver, NServiceBus.Core, Version=4.6.0.0, Culture=neutral, PublicKeyToken=9fc386479f8a226c satellite
+2014-07-12 11:34:47,965 [10] INFO  NServiceBus.Unicast.Transport.TransportReceiver [(null)] <(null)> - Worker started, failures will be redirected to Orders.Handler@WIN-UAUT16GPEQA
+2014-07-12 11:34:47,984 [10] INFO  NServiceBus.Satellites.SatelliteLauncher [(null)] <(null)> - Started 6/7 NServiceBus.Distributor.DistributorSatellite, NServiceBus.Core, Version=4.6.0.0, Culture=neutral, PublicKeyToken=9fc386479f8a226c satellite
+2014-07-12 11:34:48,178 [16] INFO  NServiceBus.Distributor.Orders.Handler [(null)] <(null)> - Worker Orders.Handler.worker@WIN-UAUT16GPEQA has started up, clearing previous reported capacity
+2014-07-12 11:34:48,195 [17] INFO  NServiceBus.Unicast.Subscriptions.MessageDrivenSubscriptions.MessageDrivenSubscriptionManager [(null)] <(null)> - Subscribing Orders.Sender@WIN-UAUT16GPEQA to message type Orders.Messages.OrderPlaced, Orders.Messages, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+2014-07-12 11:34:48,302 [16] INFO  NServiceBus.Distributor.Orders.Handler [(null)] <(null)> - Worker Orders.Handler.worker@WIN-UAUT16GPEQA checked in with available capacity: 7
+2014-07-12 11:34:48,400 [15] INFO  NServiceBus.Distributor.Orders.Handler [(null)] <(null)> - Worker Orders.Handler.worker@WIN-UAUT16GPEQA checked in with available capacity: 1
+2014-07-12 11:34:58,555 [27] INFO  NServiceBus.Distributor.Orders.Handler [(null)] <(null)> - Worker Orders.Handler.acf90c45-1662-4e82-a21a-d155a909e1f6@WIN-UAUT16GPEQA has started up, clearing previous reported capacity
+2014-07-12 11:34:58,572 [28] INFO  NServiceBus.Distributor.Orders.Handler [(null)] <(null)> - Worker Orders.Handler.72b1e6b7-738b-4019-9958-9c3a9cf68ea5@WIN-UAUT16GPEQA has started up, clearing previous reported capacity
+2014-07-12 11:35:19,735 [27] INFO  NServiceBus.Distributor.Orders.Handler [(null)] <(null)> - Worker Orders.Handler.acf90c45-1662-4e82-a21a-d155a909e1f6@WIN-UAUT16GPEQA checked in with available capacity: 1
+2014-07-12 11:35:19,738 [28] INFO  NServiceBus.Distributor.Orders.Handler [(null)] <(null)> - Worker Orders.Handler.72b1e6b7-738b-4019-9958-9c3a9cf68ea5@WIN-UAUT16GPEQA checked in with available capacity: 1
+2014-07-12 11:45:59,094 [21] INFO  NServiceBus.Distributor.Orders.Handler [(null)] <(null)> - Worker Orders.Handler.worker@WIN-UAUT16GPEQA checked in with available capacity: 1
+2014-07-12 11:45:59,327 [23] INFO  NServiceBus.Distributor.Orders.Handler [(null)] <(null)> - Worker Orders.Handler.worker@WIN-UAUT16GPEQA checked in with available capacity: 1
+2014-07-12 11:45:59,558 [28] INFO  NServiceBus.Distributor.Orders.Handler [(null)] <(null)> - Worker Orders.Handler.worker@WIN-UAUT16GPEQA checked in with available capacity: 1
+2014-07-12 11:45:59,953 [32] INFO  NServiceBus.Distributor.Orders.Handler [(null)] <(null)> - Worker Orders.Handler.worker@WIN-UAUT16GPEQA checked in with available capacity: 1
+2014-07-12 11:46:00,254 [32] INFO  NServiceBus.Distributor.Orders.Handler [(null)] <(null)> - Worker Orders.Handler.worker@WIN-UAUT16GPEQA checked in with available capacity: 1
+2014-07-12 11:46:00,671 [28] INFO  NServiceBus.Distributor.Orders.Handler [(null)] <(null)> - Worker Orders.Handler.worker@WIN-UAUT16GPEQA checked in with available capacity: 1
+2014-07-12 11:46:00,709 [23] INFO  NServiceBus.Distributor.Orders.Handler [(null)] <(null)> - Worker Orders.Handler.worker@WIN-UAUT16GPEQA checked in with available capacity: 1
+2014-07-12 11:46:00,928 [19] INFO  NServiceBus.Distributor.Orders.Handler [(null)] <(null)> - Worker Orders.Handler.worker@WIN-UAUT16GPEQA checked in with available capacity: 1
+2014-07-12 11:46:01,289 [16] INFO  NServiceBus.Distributor.Orders.Handler [(null)] <(null)> - Worker Orders.Handler.worker@WIN-UAUT16GPEQA checked in with available capacity: 1
+2014-07-12 11:46:01,569 [15] INFO  NServiceBus.Distributor.Orders.Handler [(null)] <(null)> - Worker Orders.Handler.worker@WIN-UAUT16GPEQA checked in with available capacity: 1
+2014-07-12 11:46:02,015 [19] INFO  NServiceBus.Distributor.Orders.Handler [(null)] <(null)> - Worker Orders.Handler.worker@WIN-UAUT16GPEQA checked in with available capacity: 1
+2014-07-12 11:46:02,338 [6] INFO  NServiceBus.Distributor.Orders.Handler [(null)] <(null)> - Worker Orders.Handler.worker@WIN-UAUT16GPEQA checked in with available capacity: 1
+2014-07-12 11:46:03,035 [32] INFO  NServiceBus.Distributor.Orders.Handler [(null)] <(null)> - Worker Orders.Handler.worker@WIN-UAUT16GPEQA checked in with available capacity: 1
+2014-07-12 11:46:03,742 [43] INFO  NServiceBus.Distributor.Orders.Handler [(null)] <(null)> - Worker Orders.Handler.acf90c45-1662-4e82-a21a-d155a909e1f6@WIN-UAUT16GPEQA checked in with available capacity: 1
+2014-07-12 11:46:03,858 [42] INFO  NServiceBus.Distributor.Orders.Handler [(null)] <(null)> - Worker Orders.Handler.worker@WIN-UAUT16GPEQA checked in with available capacity: 1
+2014-07-12 11:46:04,204 [32] INFO  NServiceBus.Distributor.Orders.Handler [(null)] <(null)> - Worker Orders.Handler.72b1e6b7-738b-4019-9958-9c3a9cf68ea5@WIN-UAUT16GPEQA checked in with available capacity: 1
+2014-07-12 11:46:04,423 [30] INFO  NServiceBus.Distributor.Orders.Handler [(null)] <(null)> - Worker Orders.Handler.worker@WIN-UAUT16GPEQA checked in with available capacity: 1
+2014-07-12 11:46:04,546 [29] INFO  NServiceBus.Distributor.Orders.Handler [(null)] <(null)> - Worker Orders.Handler.worker@WIN-UAUT16GPEQA checked in with available capacity: 1
+2014-07-12 11:46:04,573 [28] INFO  NServiceBus.Distributor.Orders.Handler [(null)] <(null)> - Worker Orders.Handler.worker@WIN-UAUT16GPEQA checked in with available capacity: 1
+2014-07-12 11:46:04,591 [6] INFO  NServiceBus.Distributor.Orders.Handler [(null)] <(null)> - Worker Orders.Handler.worker@WIN-UAUT16GPEQA checked in with available capacity: 1
+2014-07-12 11:46:04,616 [23] INFO  NServiceBus.Distributor.Orders.Handler [(null)] <(null)> - Worker Orders.Handler.worker@WIN-UAUT16GPEQA checked in with available capacity: 1
+2014-07-12 11:46:04,631 [8] INFO  NServiceBus.Distributor.Orders.Handler [(null)] <(null)> - Worker Orders.Handler.worker@WIN-UAUT16GPEQA checked in with available capacity: 1

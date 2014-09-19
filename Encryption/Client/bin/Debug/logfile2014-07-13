@@ -1,0 +1,30 @@
+2014-07-13 12:22:41,734 [1] INFO  NServiceBus.Configure [(null)] <(null)> - Invocation of NServiceBus.IWantToRunBeforeConfiguration completed in 0.13 s
+2014-07-13 12:22:41,920 [1] INFO  NServiceBus.Configure [(null)] <(null)> - Invocation of NServiceBus.Config.INeedInitialization completed in 0.00 s
+2014-07-13 12:22:42,242 [1] INFO  NServiceBus.Licensing.LicenseManager [(null)] <(null)> - Expires on 07/30/2014 00:00:00
+2014-07-13 12:22:42,393 [1] FATAL NServiceBus.Hosting.GenericHost [(null)] <(null)> - Exception when starting endpoint.
+System.Configuration.ConfigurationErrorsException: 'MsmqTransportConfig' section is obsolete. Please update your configuration to use the new 'TransportConfig' section instead. You can use the PowerShell cmdlet 'Add-NServiceBusTransportConfig' in the Package Manager Console to quickly add it for you.
+   at NServiceBus.Unicast.Transport.Config.Bootstrapper.LoadConfigurationSettings() in y:\BuildAgent\work\31f8c64a6e8a2d7c\src\NServiceBus.Core\Unicast\Transport\Config\Bootstrapper.cs:line 41
+   at NServiceBus.Unicast.Transport.Config.Bootstrapper.Init() in y:\BuildAgent\work\31f8c64a6e8a2d7c\src\NServiceBus.Core\Unicast\Transport\Config\Bootstrapper.cs:line 13
+   at NServiceBus.Configure.<Initialize>b__10(INeedInitialization t) in y:\BuildAgent\work\31f8c64a6e8a2d7c\src\NServiceBus.Core\Configure.cs:line 350
+   at NServiceBus.Configure.<>c__DisplayClass23`1.<ActivateAndInvoke>b__20(Type t) in y:\BuildAgent\work\31f8c64a6e8a2d7c\src\NServiceBus.Core\Configure.cs:line 556
+   at System.Collections.Generic.List`1.ForEach(Action`1 action)
+   at NServiceBus.Configure.ForAllTypes[T](Action`1 action) in y:\BuildAgent\work\31f8c64a6e8a2d7c\src\NServiceBus.Core\Configure.cs:line 381
+   at NServiceBus.Configure.ActivateAndInvoke[T](Action`1 action, Nullable`1 thresholdForWarning) in y:\BuildAgent\work\31f8c64a6e8a2d7c\src\NServiceBus.Core\Configure.cs:line 561
+   at NServiceBus.Configure.Initialize() in y:\BuildAgent\work\31f8c64a6e8a2d7c\src\NServiceBus.Core\Configure.cs:line 352
+   at NServiceBus.Configure.CreateBus() in y:\BuildAgent\work\31f8c64a6e8a2d7c\src\NServiceBus.Core\Configure.cs:line 297
+   at NServiceBus.Hosting.GenericHost.Start() in y:\BuildAgent\work\31f8c64a6e8a2d7c\src\NServiceBus.Core\Hosting\GenericHost.cs:line 72
+2014-07-13 12:26:10,140 [1] INFO  NServiceBus.Configure [(null)] <(null)> - Invocation of NServiceBus.IWantToRunBeforeConfiguration completed in 0.11 s
+2014-07-13 12:26:10,310 [1] INFO  NServiceBus.Configure [(null)] <(null)> - Invocation of NServiceBus.Config.INeedInitialization completed in 0.00 s
+2014-07-13 12:26:10,641 [1] INFO  NServiceBus.Licensing.LicenseManager [(null)] <(null)> - Expires on 07/30/2014 00:00:00
+2014-07-13 12:26:10,785 [1] FATAL NServiceBus.Hosting.GenericHost [(null)] <(null)> - Exception when starting endpoint.
+System.Configuration.ConfigurationErrorsException: 'MsmqTransportConfig' section is obsolete. Please update your configuration to use the new 'TransportConfig' section instead. You can use the PowerShell cmdlet 'Add-NServiceBusTransportConfig' in the Package Manager Console to quickly add it for you.
+   at NServiceBus.Unicast.Transport.Config.Bootstrapper.LoadConfigurationSettings() in y:\BuildAgent\work\31f8c64a6e8a2d7c\src\NServiceBus.Core\Unicast\Transport\Config\Bootstrapper.cs:line 41
+   at NServiceBus.Unicast.Transport.Config.Bootstrapper.Init() in y:\BuildAgent\work\31f8c64a6e8a2d7c\src\NServiceBus.Core\Unicast\Transport\Config\Bootstrapper.cs:line 13
+   at NServiceBus.Configure.<Initialize>b__10(INeedInitialization t) in y:\BuildAgent\work\31f8c64a6e8a2d7c\src\NServiceBus.Core\Configure.cs:line 350
+   at NServiceBus.Configure.<>c__DisplayClass23`1.<ActivateAndInvoke>b__20(Type t) in y:\BuildAgent\work\31f8c64a6e8a2d7c\src\NServiceBus.Core\Configure.cs:line 556
+   at System.Collections.Generic.List`1.ForEach(Action`1 action)
+   at NServiceBus.Configure.ForAllTypes[T](Action`1 action) in y:\BuildAgent\work\31f8c64a6e8a2d7c\src\NServiceBus.Core\Configure.cs:line 381
+   at NServiceBus.Configure.ActivateAndInvoke[T](Action`1 action, Nullable`1 thresholdForWarning) in y:\BuildAgent\work\31f8c64a6e8a2d7c\src\NServiceBus.Core\Configure.cs:line 561
+   at NServiceBus.Configure.Initialize() in y:\BuildAgent\work\31f8c64a6e8a2d7c\src\NServiceBus.Core\Configure.cs:line 352
+   at NServiceBus.Configure.CreateBus() in y:\BuildAgent\work\31f8c64a6e8a2d7c\src\NServiceBus.Core\Configure.cs:line 297
+   at NServiceBus.Hosting.GenericHost.Start() in y:\BuildAgent\work\31f8c64a6e8a2d7c\src\NServiceBus.Core\Hosting\GenericHost.cs:line 72

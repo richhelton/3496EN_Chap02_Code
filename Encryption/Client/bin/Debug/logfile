@@ -1,0 +1,208 @@
+2014-08-12 10:55:32,005 [1] INFO  NServiceBus.Configure [(null)] <(null)> - Invocation of NServiceBus.IWantToRunBeforeConfiguration completed in 0.16 s
+2014-08-12 10:55:32,193 [1] INFO  NServiceBus.Configure [(null)] <(null)> - Invocation of NServiceBus.Config.INeedInitialization completed in 0.00 s
+2014-08-12 10:55:32,209 [1] INFO  NServiceBus.Licensing.LicenseManager [(null)] <(null)> - Trial for Particular Service Platform is still active, trial expires on 8/25/2014. Configuring NServiceBus to run in trial mode.
+2014-08-12 10:55:32,287 [1] INFO  NServiceBus.Configure [(null)] <(null)> - Invocation of NServiceBus.INeedInitialization completed in 0.08 s
+2014-08-12 10:55:32,287 [1] INFO  NServiceBus.Features.FeatureInitializer [(null)] <(null)> - Default feature TimeoutManager has been explicitly disabled
+2014-08-12 10:55:32,287 [1] INFO  NServiceBus.Features.FeatureInitializer [(null)] <(null)> - Default feature SecondLevelRetries has been explicitly disabled
+2014-08-12 10:55:32,975 [1] INFO  NServiceBus.Configure [(null)] <(null)> - Invocation of NServiceBus.IWantToRunBeforeConfigurationIsFinalized completed in 0.69 s
+2014-08-12 10:55:33,006 [1] INFO  NServiceBus.Features.FeatureInitializer [(null)] <(null)> - Features: 
+Audit [4.6.1] - Enabled
+AutoSubscribe [4.6.1] - Enabled
+BinarySerialization [4.6.1] - Controlled by category Serializers
+BsonSerialization [4.6.1] - Controlled by category Serializers
+JsonSerialization [4.6.1] - Controlled by category Serializers
+XmlSerialization [4.6.1] - Controlled by category Serializers
+MsmqTransport [4.6.1] - Enabled
+Gateway [4.6.1] - Disabled
+TimeoutManager [4.6.1] - Disabled
+Sagas [4.6.1] - Disabled
+SecondLevelRetries [4.6.1] - Disabled
+StorageDrivenPublisher [4.6.1] - Disabled
+MessageDrivenSubscriptions [4.6.1] - Enabled
+
+2014-08-12 10:55:33,021 [1] INFO  NServiceBus.Features.FeatureInitializer [(null)] <(null)> - Feature categories: 
+   - Serializers
+       * BinarySerialization - Disabled
+       * BsonSerialization - Disabled
+       * JsonSerialization - Disabled
+       * XmlSerialization - Enabled
+
+2014-08-12 10:55:33,037 [1] INFO  NServiceBus.Unicast.Config.FinalizeUnicastBusConfiguration [(null)] <(null)> - Number of messages found: 4
+2014-08-12 10:55:33,053 [1] INFO  NServiceBus.Config.InfrastructureServices [(null)] <(null)> - Infrastructure service NServiceBus.AutomaticSubscriptions.IAutoSubscriptionStrategy was found in the container and will be used instead of the default
+2014-08-12 10:55:33,053 [1] INFO  NServiceBus.Configure [(null)] <(null)> - Invocation of NServiceBus.Config.IFinalizeConfiguration completed in 0.08 s
+2014-08-12 10:55:33,506 [1] WARN  NServiceBus.Transports.Msmq.MsmqQueueCreator [(null)] <(null)> - Queue NSB_RICHH_8_1\private$\Client does not exist.
+2014-08-12 10:55:33,975 [1] INFO  NServiceBus.Installation.PerformanceMonitorUsersInstaller [(null)] <(null)> - Skipped adding user 'NSB_RICHH_8_1\Rich' to group 'Performance Monitor Users' because the user is already in group.
+2014-08-12 10:55:37,835 [11] FATAL NServiceBus [(null)] <(null)> - Client.Runner, Client, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null could not be started.
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at NServiceBus.Transports.Msmq.MsmqUtilities.GetFullPath(Address value) in y:\BuildAgent\work\31f8c64a6e8a2d7c\src\NServiceBus.Core\Transports\Msmq\MsmqUtilities.cs:line 27
+   at NServiceBus.Transports.Msmq.MsmqMessageSender.Send(TransportMessage message, Address address) in y:\BuildAgent\work\31f8c64a6e8a2d7c\src\NServiceBus.Core\Transports\Msmq\MsmqMessageSender.cs:line 38
+   at NServiceBus.Unicast.Behaviors.DispatchMessageToTransportBehavior.Invoke(SendPhysicalMessageContext context, Action next) in y:\BuildAgent\work\31f8c64a6e8a2d7c\src\NServiceBus.Core\Unicast\Behaviors\DispatchMessageToTransportBehavior.cs:line 77
+   at NServiceBus.Pipeline.BehaviorChain`1.InvokeNext(T context) in y:\BuildAgent\work\31f8c64a6e8a2d7c\src\NServiceBus.Core\Pipeline\BehaviorChain.cs:line 51   at NServiceBus.Pipeline.BehaviorChain`1.Invoke(T context) in y:\BuildAgent\work\31f8c64a6e8a2d7c\src\NServiceBus.Core\Pipeline\BehaviorChain.cs:line 36
+   at NServiceBus.Pipeline.PipelineExecutor.Execute[T](BehaviorChain`1 pipelineAction, T context) in y:\BuildAgent\work\31f8c64a6e8a2d7c\src\NServiceBus.Core\Pipeline\PipelineExecutor.cs:line 139
+   at NServiceBus.Pipeline.PipelineExecutor.InvokeSendPipeline(SendOptions sendOptions, TransportMessage physicalMessage) in y:\BuildAgent\work\31f8c64a6e8a2d7c\src\NServiceBus.Core\Pipeline\PipelineExecutor.cs:line 97
+   at NServiceBus.Unicast.Behaviors.CreatePhysicalMessageBehavior.Invoke(SendLogicalMessagesContext context, Action next) in y:\BuildAgent\work\31f8c64a6e8a2d7c\src\NServiceBus.Core\Unicast\Behaviors\CreatePhysicalMessageBehavior.cs:line 57
+   at NServiceBus.Pipeline.BehaviorChain`1.InvokeNext(T context) in y:\BuildAgent\work\31f8c64a6e8a2d7c\src\NServiceBus.Core\Pipeline\BehaviorChain.cs:line 51   at NServiceBus.Pipeline.BehaviorChain`1.Invoke(T context) in y:\BuildAgent\work\31f8c64a6e8a2d7c\src\NServiceBus.Core\Pipeline\BehaviorChain.cs:line 36
+   at NServiceBus.Pipeline.PipelineExecutor.Execute[T](BehaviorChain`1 pipelineAction, T context) in y:\BuildAgent\work\31f8c64a6e8a2d7c\src\NServiceBus.Core\Pipeline\PipelineExecutor.cs:line 139
+   at NServiceBus.Pipeline.PipelineExecutor.InvokeSendPipeline(SendOptions sendOptions, IEnumerable`1 messages) in y:\BuildAgent\work\31f8c64a6e8a2d7c\src\NServiceBus.Core\Pipeline\PipelineExecutor.cs:line 78
+   at NServiceBus.Unicast.UnicastBus.InvokeSendPipeline(SendOptions sendOptions, List`1 messages) in y:\BuildAgent\work\31f8c64a6e8a2d7c\src\NServiceBus.Core\Unicast\UnicastBus.cs:line 749
+   at NServiceBus.Unicast.UnicastBus.SendMessages(SendOptions sendOptions, List`1 messages) in y:\BuildAgent\work\31f8c64a6e8a2d7c\src\NServiceBus.Core\Unicast\UnicastBus.cs:line 725
+   at NServiceBus.Unicast.UnicastBus.Send(Object[] messages) in y:\BuildAgent\work\31f8c64a6e8a2d7c\src\NServiceBus.Core\Unicast\UnicastBus.cs:line 571
+   at NServiceBus.Unicast.UnicastBus.Send(Object message) in y:\BuildAgent\work\31f8c64a6e8a2d7c\src\NServiceBus.Core\Unicast\UnicastBus.cs:line 555
+   at NServiceBus.Unicast.UnicastBus.Send[T](Action`1 messageConstructor) in y:\BuildAgent\work\31f8c64a6e8a2d7c\src\NServiceBus.Core\Unicast\UnicastBus.cs:line 550
+   at Client.Runner.Start() in c:\Code_August\3816_Chap02_NSB_Arch\Encryption\Client\Client.cs:line 24
+   at NServiceBus.Unicast.UnicastBus.<>c__DisplayClass1d.<Start>b__1b() in y:\BuildAgent\work\31f8c64a6e8a2d7c\src\NServiceBus.Core\Unicast\UnicastBus.cs:line 826
+2014-08-12 11:06:39,196 [1] INFO  NServiceBus.Configure [(null)] <(null)> - Invocation of NServiceBus.IWantToRunBeforeConfiguration completed in 0.15 s
+2014-08-12 11:06:39,711 [1] FATAL NServiceBus.Hosting.GenericHost [(null)] <(null)> - Exception when starting endpoint.
+System.Configuration.ConfigurationErrorsException: Unrecognized element 'add'. (C:\Code_August\3816_Chap02_NSB_Arch\Encryption\Client\bin\Debug\Client.dll.config line 38)
+   at System.Configuration.BaseConfigurationRecord.EvaluateOne(String[] keys, SectionInput input, Boolean isTrusted, FactoryRecord factoryRecord, SectionRecord sectionRecord, Object parentResult)
+   at System.Configuration.BaseConfigurationRecord.Evaluate(FactoryRecord factoryRecord, SectionRecord sectionRecord, Object parentResult, Boolean getLkg, Boolean getRuntimeObject, Object& result, Object& resultRuntimeObject)
+   at System.Configuration.BaseConfigurationRecord.GetSectionRecursive(String configKey, Boolean getLkg, Boolean checkPermission, Boolean getRuntimeObject, Boolean requestIsHere, Object& result, Object& resultRuntimeObject)
+   at System.Configuration.BaseConfigurationRecord.GetSectionRecursive(String configKey, Boolean getLkg, Boolean checkPermission, Boolean getRuntimeObject, Boolean requestIsHere, Object& result, Object& resultRuntimeObject)
+   at System.Configuration.BaseConfigurationRecord.GetSectionRecursive(String configKey, Boolean getLkg, Boolean checkPermission, Boolean getRuntimeObject, Boolean requestIsHere, Object& result, Object& resultRuntimeObject)
+   at System.Configuration.BaseConfigurationRecord.GetSection(String configKey, Boolean getLkg, Boolean checkPermission)
+   at System.Configuration.BaseConfigurationRecord.GetSection(String configKey)
+   at System.Configuration.ClientConfigurationSystem.System.Configuration.Internal.IInternalConfigSystem.GetSection(String sectionName)
+   at System.Configuration.ConfigurationManager.GetSection(String sectionName)
+   at NServiceBus.Config.ConfigurationSource.DefaultConfigurationSource.NServiceBus.Config.ConfigurationSource.IConfigurationSource.GetConfiguration[T]() in y:\BuildAgent\work\31f8c64a6e8a2d7c\src\NServiceBus.Core\Config\ConfigurationSource\DefaultConfigurationSource.cs:line 16
+   at NServiceBus.Configure.GetConfigSection[T]() in y:\BuildAgent\work\31f8c64a6e8a2d7c\src\NServiceBus.Core\Configure.cs:line 402
+   at NServiceBus.ConfigureMasterNode.GetMasterNodeAddress(Configure config) in y:\BuildAgent\work\31f8c64a6e8a2d7c\src\NServiceBus.Core\Distributor\MasterNode\ConfigureMasterNode.cs:line 44
+   at NServiceBus.Unicast.Config.ConfigUnicastBus.Configure(Configure config) in y:\BuildAgent\work\31f8c64a6e8a2d7c\src\NServiceBus.Core\Unicast\Config\ConfigUnicastBus.cs:line 28
+   at NServiceBus.ConfigureUnicastBus.UnicastBus(Configure config) in y:\BuildAgent\work\31f8c64a6e8a2d7c\src\NServiceBus.Core\ConfigureUnicastBus.cs:line 22
+   at NServiceBus.Hosting.Windows.Roles.Handlers.ClientRoleHandler.ConfigureRole(IConfigureThisEndpoint specifier) in y:\BuildAgent\work\31f8c64a6e8a2d7c\src\NServiceBus.Hosting.Windows\Roles\Handlers\ClientRoleHandler.cs:line 19
+   at NServiceBus.Hosting.Roles.RoleManager.ConfigureBusForEndpoint(IConfigureThisEndpoint specifier) in y:\BuildAgent\work\31f8c64a6e8a2d7c\src\NServiceBus.Core\Hosting\Roles\RoleManager.cs:line 67
+   at NServiceBus.Hosting.GenericHost.PerformConfiguration() in y:\BuildAgent\work\31f8c64a6e8a2d7c\src\NServiceBus.Core\Hosting\GenericHost.cs:line 189
+   at NServiceBus.Hosting.GenericHost.Start() in y:\BuildAgent\work\31f8c64a6e8a2d7c\src\NServiceBus.Core\Hosting\GenericHost.cs:line 72
+2014-08-12 11:08:15,384 [1] INFO  NServiceBus.Configure [(null)] <(null)> - Invocation of NServiceBus.IWantToRunBeforeConfiguration completed in 0.11 s
+2014-08-12 11:08:15,556 [1] INFO  NServiceBus.Configure [(null)] <(null)> - Invocation of NServiceBus.Config.INeedInitialization completed in 0.00 s
+2014-08-12 11:08:15,587 [1] INFO  NServiceBus.Licensing.LicenseManager [(null)] <(null)> - Trial for Particular Service Platform is still active, trial expires on 8/25/2014. Configuring NServiceBus to run in trial mode.
+2014-08-12 11:08:16,337 [1] FATAL NServiceBus.Hosting.GenericHost [(null)] <(null)> - Exception when starting endpoint.
+System.Configuration.ConfigurationErrorsException: Faults forwarding requires an error queue to be specified. Please add a 'MessageForwardingInCaseOfFaultConfig' section to your app.config
+ or configure a global one using the powershell command: Set-NServiceBusLocalMachineSettings -ErrorQueue {address of error queue}
+   at NServiceBus.ConfigureFaultsForwarder.MessageForwardingInCaseOfFault(Configure config) in y:\BuildAgent\work\31f8c64a6e8a2d7c\src\NServiceBus.Core\ConfigureFaultsForwarder.cs:line 70
+   at NServiceBus.Bootstrapper.Init() in y:\BuildAgent\work\31f8c64a6e8a2d7c\src\NServiceBus.Core\ConfigureFaultsForwarder.cs:line 87
+   at NServiceBus.Configure.<Initialize>b__10(INeedInitialization t) in y:\BuildAgent\work\31f8c64a6e8a2d7c\src\NServiceBus.Core\Configure.cs:line 350
+   at NServiceBus.Configure.<>c__DisplayClass23`1.<ActivateAndInvoke>b__20(Type t) in y:\BuildAgent\work\31f8c64a6e8a2d7c\src\NServiceBus.Core\Configure.cs:line 556
+   at System.Collections.Generic.List`1.ForEach(Action`1 action)
+   at NServiceBus.Configure.ForAllTypes[T](Action`1 action) in y:\BuildAgent\work\31f8c64a6e8a2d7c\src\NServiceBus.Core\Configure.cs:line 381
+   at NServiceBus.Configure.ActivateAndInvoke[T](Action`1 action, Nullable`1 thresholdForWarning) in y:\BuildAgent\work\31f8c64a6e8a2d7c\src\NServiceBus.Core\Configure.cs:line 561
+   at NServiceBus.Configure.Initialize() in y:\BuildAgent\work\31f8c64a6e8a2d7c\src\NServiceBus.Core\Configure.cs:line 352
+   at NServiceBus.Configure.CreateBus() in y:\BuildAgent\work\31f8c64a6e8a2d7c\src\NServiceBus.Core\Configure.cs:line 297
+   at NServiceBus.Hosting.GenericHost.Start() in y:\BuildAgent\work\31f8c64a6e8a2d7c\src\NServiceBus.Core\Hosting\GenericHost.cs:line 72
+2014-08-12 11:08:34,434 [1] INFO  NServiceBus.Configure [(null)] <(null)> - Invocation of NServiceBus.IWantToRunBeforeConfiguration completed in 0.12 s
+2014-08-12 11:08:34,621 [1] INFO  NServiceBus.Configure [(null)] <(null)> - Invocation of NServiceBus.Config.INeedInitialization completed in 0.00 s
+2014-08-12 11:08:34,637 [1] INFO  NServiceBus.Licensing.LicenseManager [(null)] <(null)> - Trial for Particular Service Platform is still active, trial expires on 8/25/2014. Configuring NServiceBus to run in trial mode.
+2014-08-12 11:08:35,371 [1] FATAL NServiceBus.Hosting.GenericHost [(null)] <(null)> - Exception when starting endpoint.
+System.Configuration.ConfigurationErrorsException: Faults forwarding requires an error queue to be specified. Please add a 'MessageForwardingInCaseOfFaultConfig' section to your app.config
+ or configure a global one using the powershell command: Set-NServiceBusLocalMachineSettings -ErrorQueue {address of error queue}
+   at NServiceBus.ConfigureFaultsForwarder.MessageForwardingInCaseOfFault(Configure config) in y:\BuildAgent\work\31f8c64a6e8a2d7c\src\NServiceBus.Core\ConfigureFaultsForwarder.cs:line 70
+   at NServiceBus.Bootstrapper.Init() in y:\BuildAgent\work\31f8c64a6e8a2d7c\src\NServiceBus.Core\ConfigureFaultsForwarder.cs:line 87
+   at NServiceBus.Configure.<Initialize>b__10(INeedInitialization t) in y:\BuildAgent\work\31f8c64a6e8a2d7c\src\NServiceBus.Core\Configure.cs:line 350
+   at NServiceBus.Configure.<>c__DisplayClass23`1.<ActivateAndInvoke>b__20(Type t) in y:\BuildAgent\work\31f8c64a6e8a2d7c\src\NServiceBus.Core\Configure.cs:line 556
+   at System.Collections.Generic.List`1.ForEach(Action`1 action)
+   at NServiceBus.Configure.ForAllTypes[T](Action`1 action) in y:\BuildAgent\work\31f8c64a6e8a2d7c\src\NServiceBus.Core\Configure.cs:line 381
+   at NServiceBus.Configure.ActivateAndInvoke[T](Action`1 action, Nullable`1 thresholdForWarning) in y:\BuildAgent\work\31f8c64a6e8a2d7c\src\NServiceBus.Core\Configure.cs:line 561
+   at NServiceBus.Configure.Initialize() in y:\BuildAgent\work\31f8c64a6e8a2d7c\src\NServiceBus.Core\Configure.cs:line 352
+   at NServiceBus.Configure.CreateBus() in y:\BuildAgent\work\31f8c64a6e8a2d7c\src\NServiceBus.Core\Configure.cs:line 297
+   at NServiceBus.Hosting.GenericHost.Start() in y:\BuildAgent\work\31f8c64a6e8a2d7c\src\NServiceBus.Core\Hosting\GenericHost.cs:line 72
+2014-08-12 11:09:36,147 [1] INFO  NServiceBus.Configure [(null)] <(null)> - Invocation of NServiceBus.IWantToRunBeforeConfiguration completed in 0.11 s
+2014-08-12 11:09:36,320 [1] INFO  NServiceBus.Configure [(null)] <(null)> - Invocation of NServiceBus.Config.INeedInitialization completed in 0.00 s
+2014-08-12 11:09:36,335 [1] INFO  NServiceBus.Licensing.LicenseManager [(null)] <(null)> - Trial for Particular Service Platform is still active, trial expires on 8/25/2014. Configuring NServiceBus to run in trial mode.
+2014-08-12 11:09:37,070 [1] FATAL NServiceBus.Hosting.GenericHost [(null)] <(null)> - Exception when starting endpoint.
+System.Configuration.ConfigurationErrorsException: 'MessageForwardingInCaseOfFaultConfig' configuration section is found but 'ErrorQueue' value is missing.
+ The following is an example for adding such a value to your app config: 
+ <MessageForwardingInCaseOfFaultConfig ErrorQueue="error"/> 
+
+   at NServiceBus.ConfigureFaultsForwarder.MessageForwardingInCaseOfFault(Configure config) in y:\BuildAgent\work\31f8c64a6e8a2d7c\src\NServiceBus.Core\ConfigureFaultsForwarder.cs:line 43
+   at NServiceBus.Bootstrapper.Init() in y:\BuildAgent\work\31f8c64a6e8a2d7c\src\NServiceBus.Core\ConfigureFaultsForwarder.cs:line 87
+   at NServiceBus.Configure.<Initialize>b__10(INeedInitialization t) in y:\BuildAgent\work\31f8c64a6e8a2d7c\src\NServiceBus.Core\Configure.cs:line 350
+   at NServiceBus.Configure.<>c__DisplayClass23`1.<ActivateAndInvoke>b__20(Type t) in y:\BuildAgent\work\31f8c64a6e8a2d7c\src\NServiceBus.Core\Configure.cs:line 556
+   at System.Collections.Generic.List`1.ForEach(Action`1 action)
+   at NServiceBus.Configure.ForAllTypes[T](Action`1 action) in y:\BuildAgent\work\31f8c64a6e8a2d7c\src\NServiceBus.Core\Configure.cs:line 381
+   at NServiceBus.Configure.ActivateAndInvoke[T](Action`1 action, Nullable`1 thresholdForWarning) in y:\BuildAgent\work\31f8c64a6e8a2d7c\src\NServiceBus.Core\Configure.cs:line 561
+   at NServiceBus.Configure.Initialize() in y:\BuildAgent\work\31f8c64a6e8a2d7c\src\NServiceBus.Core\Configure.cs:line 352
+   at NServiceBus.Configure.CreateBus() in y:\BuildAgent\work\31f8c64a6e8a2d7c\src\NServiceBus.Core\Configure.cs:line 297
+   at NServiceBus.Hosting.GenericHost.Start() in y:\BuildAgent\work\31f8c64a6e8a2d7c\src\NServiceBus.Core\Hosting\GenericHost.cs:line 72
+2014-08-12 11:10:31,000 [1] INFO  NServiceBus.Configure [(null)] <(null)> - Invocation of NServiceBus.IWantToRunBeforeConfiguration completed in 0.11 s
+2014-08-12 11:10:31,188 [1] INFO  NServiceBus.Configure [(null)] <(null)> - Invocation of NServiceBus.Config.INeedInitialization completed in 0.00 s
+2014-08-12 11:10:31,203 [1] INFO  NServiceBus.Licensing.LicenseManager [(null)] <(null)> - Trial for Particular Service Platform is still active, trial expires on 8/25/2014. Configuring NServiceBus to run in trial mode.
+2014-08-12 11:10:32,000 [1] FATAL NServiceBus.Hosting.GenericHost [(null)] <(null)> - Exception when starting endpoint.
+System.Configuration.ConfigurationErrorsException: 'MsmqTransportConfig' section is obsolete. Please update your configuration to use the new 'TransportConfig' section instead. You can use the PowerShell cmdlet 'Add-NServiceBusTransportConfig' in the Package Manager Console to quickly add it for you.
+   at NServiceBus.Unicast.Transport.Config.Bootstrapper.LoadConfigurationSettings() in y:\BuildAgent\work\31f8c64a6e8a2d7c\src\NServiceBus.Core\Unicast\Transport\Config\Bootstrapper.cs:line 41
+   at NServiceBus.Unicast.Transport.Config.Bootstrapper.Init() in y:\BuildAgent\work\31f8c64a6e8a2d7c\src\NServiceBus.Core\Unicast\Transport\Config\Bootstrapper.cs:line 13
+   at NServiceBus.Configure.<Initialize>b__10(INeedInitialization t) in y:\BuildAgent\work\31f8c64a6e8a2d7c\src\NServiceBus.Core\Configure.cs:line 350
+   at NServiceBus.Configure.<>c__DisplayClass23`1.<ActivateAndInvoke>b__20(Type t) in y:\BuildAgent\work\31f8c64a6e8a2d7c\src\NServiceBus.Core\Configure.cs:line 556
+   at System.Collections.Generic.List`1.ForEach(Action`1 action)
+   at NServiceBus.Configure.ForAllTypes[T](Action`1 action) in y:\BuildAgent\work\31f8c64a6e8a2d7c\src\NServiceBus.Core\Configure.cs:line 381
+   at NServiceBus.Configure.ActivateAndInvoke[T](Action`1 action, Nullable`1 thresholdForWarning) in y:\BuildAgent\work\31f8c64a6e8a2d7c\src\NServiceBus.Core\Configure.cs:line 561
+   at NServiceBus.Configure.Initialize() in y:\BuildAgent\work\31f8c64a6e8a2d7c\src\NServiceBus.Core\Configure.cs:line 352
+   at NServiceBus.Configure.CreateBus() in y:\BuildAgent\work\31f8c64a6e8a2d7c\src\NServiceBus.Core\Configure.cs:line 297
+   at NServiceBus.Hosting.GenericHost.Start() in y:\BuildAgent\work\31f8c64a6e8a2d7c\src\NServiceBus.Core\Hosting\GenericHost.cs:line 72
+2014-08-12 12:37:19,116 [1] INFO  NServiceBus.Configure [(null)] <(null)> - Invocation of NServiceBus.IWantToRunBeforeConfiguration completed in 0.12 s
+2014-08-12 12:37:19,288 [1] INFO  NServiceBus.Configure [(null)] <(null)> - Invocation of NServiceBus.Config.INeedInitialization completed in 0.00 s
+2014-08-12 12:37:19,319 [1] INFO  NServiceBus.Licensing.LicenseManager [(null)] <(null)> - Trial for Particular Service Platform is still active, trial expires on 8/25/2014. Configuring NServiceBus to run in trial mode.
+2014-08-12 12:37:20,101 [1] FATAL NServiceBus.Hosting.GenericHost [(null)] <(null)> - Exception when starting endpoint.
+System.Configuration.ConfigurationErrorsException: 'MsmqTransportConfig' section is obsolete. Please update your configuration to use the new 'TransportConfig' section instead. You can use the PowerShell cmdlet 'Add-NServiceBusTransportConfig' in the Package Manager Console to quickly add it for you.
+   at NServiceBus.Unicast.Transport.Config.Bootstrapper.LoadConfigurationSettings() in y:\BuildAgent\work\31f8c64a6e8a2d7c\src\NServiceBus.Core\Unicast\Transport\Config\Bootstrapper.cs:line 41
+   at NServiceBus.Unicast.Transport.Config.Bootstrapper.Init() in y:\BuildAgent\work\31f8c64a6e8a2d7c\src\NServiceBus.Core\Unicast\Transport\Config\Bootstrapper.cs:line 13
+   at NServiceBus.Configure.<Initialize>b__10(INeedInitialization t) in y:\BuildAgent\work\31f8c64a6e8a2d7c\src\NServiceBus.Core\Configure.cs:line 350
+   at NServiceBus.Configure.<>c__DisplayClass23`1.<ActivateAndInvoke>b__20(Type t) in y:\BuildAgent\work\31f8c64a6e8a2d7c\src\NServiceBus.Core\Configure.cs:line 556
+   at System.Collections.Generic.List`1.ForEach(Action`1 action)
+   at NServiceBus.Configure.ForAllTypes[T](Action`1 action) in y:\BuildAgent\work\31f8c64a6e8a2d7c\src\NServiceBus.Core\Configure.cs:line 381
+   at NServiceBus.Configure.ActivateAndInvoke[T](Action`1 action, Nullable`1 thresholdForWarning) in y:\BuildAgent\work\31f8c64a6e8a2d7c\src\NServiceBus.Core\Configure.cs:line 561
+   at NServiceBus.Configure.Initialize() in y:\BuildAgent\work\31f8c64a6e8a2d7c\src\NServiceBus.Core\Configure.cs:line 352
+   at NServiceBus.Configure.CreateBus() in y:\BuildAgent\work\31f8c64a6e8a2d7c\src\NServiceBus.Core\Configure.cs:line 297
+   at NServiceBus.Hosting.GenericHost.Start() in y:\BuildAgent\work\31f8c64a6e8a2d7c\src\NServiceBus.Core\Hosting\GenericHost.cs:line 72
+2014-08-12 12:39:28,886 [1] INFO  NServiceBus.Configure [(null)] <(null)> - Invocation of NServiceBus.IWantToRunBeforeConfiguration completed in 0.15 s
+2014-08-12 12:39:30,162 [1] FATAL NServiceBus.Hosting.GenericHost [(null)] <(null)> - Exception when starting endpoint.
+System.Configuration.ConfigurationErrorsException: Unrecognized element 'add'. (C:\Code_August\3816_Chap02_NSB_Arch\Encryption\Client\bin\Debug\Client.dll.config line 38)
+   at System.Configuration.BaseConfigurationRecord.EvaluateOne(String[] keys, SectionInput input, Boolean isTrusted, FactoryRecord factoryRecord, SectionRecord sectionRecord, Object parentResult)
+   at System.Configuration.BaseConfigurationRecord.Evaluate(FactoryRecord factoryRecord, SectionRecord sectionRecord, Object parentResult, Boolean getLkg, Boolean getRuntimeObject, Object& result, Object& resultRuntimeObject)
+   at System.Configuration.BaseConfigurationRecord.GetSectionRecursive(String configKey, Boolean getLkg, Boolean checkPermission, Boolean getRuntimeObject, Boolean requestIsHere, Object& result, Object& resultRuntimeObject)
+   at System.Configuration.BaseConfigurationRecord.GetSectionRecursive(String configKey, Boolean getLkg, Boolean checkPermission, Boolean getRuntimeObject, Boolean requestIsHere, Object& result, Object& resultRuntimeObject)
+   at System.Configuration.BaseConfigurationRecord.GetSectionRecursive(String configKey, Boolean getLkg, Boolean checkPermission, Boolean getRuntimeObject, Boolean requestIsHere, Object& result, Object& resultRuntimeObject)
+   at System.Configuration.BaseConfigurationRecord.GetSection(String configKey, Boolean getLkg, Boolean checkPermission)
+   at System.Configuration.BaseConfigurationRecord.GetSection(String configKey)
+   at System.Configuration.ClientConfigurationSystem.System.Configuration.Internal.IInternalConfigSystem.GetSection(String sectionName)
+   at System.Configuration.ConfigurationManager.GetSection(String sectionName)
+   at NServiceBus.Config.ConfigurationSource.DefaultConfigurationSource.NServiceBus.Config.ConfigurationSource.IConfigurationSource.GetConfiguration[T]() in y:\BuildAgent\work\31f8c64a6e8a2d7c\src\NServiceBus.Core\Config\ConfigurationSource\DefaultConfigurationSource.cs:line 16
+   at NServiceBus.Configure.GetConfigSection[T]() in y:\BuildAgent\work\31f8c64a6e8a2d7c\src\NServiceBus.Core\Configure.cs:line 402
+   at NServiceBus.ConfigureMasterNode.GetMasterNodeAddress(Configure config) in y:\BuildAgent\work\31f8c64a6e8a2d7c\src\NServiceBus.Core\Distributor\MasterNode\ConfigureMasterNode.cs:line 44
+   at NServiceBus.Unicast.Config.ConfigUnicastBus.Configure(Configure config) in y:\BuildAgent\work\31f8c64a6e8a2d7c\src\NServiceBus.Core\Unicast\Config\ConfigUnicastBus.cs:line 28
+   at NServiceBus.ConfigureUnicastBus.UnicastBus(Configure config) in y:\BuildAgent\work\31f8c64a6e8a2d7c\src\NServiceBus.Core\ConfigureUnicastBus.cs:line 22
+   at NServiceBus.Hosting.Windows.Roles.Handlers.ClientRoleHandler.ConfigureRole(IConfigureThisEndpoint specifier) in y:\BuildAgent\work\31f8c64a6e8a2d7c\src\NServiceBus.Hosting.Windows\Roles\Handlers\ClientRoleHandler.cs:line 19
+   at NServiceBus.Hosting.Roles.RoleManager.ConfigureBusForEndpoint(IConfigureThisEndpoint specifier) in y:\BuildAgent\work\31f8c64a6e8a2d7c\src\NServiceBus.Core\Hosting\Roles\RoleManager.cs:line 67
+   at NServiceBus.Hosting.GenericHost.PerformConfiguration() in y:\BuildAgent\work\31f8c64a6e8a2d7c\src\NServiceBus.Core\Hosting\GenericHost.cs:line 189
+   at NServiceBus.Hosting.GenericHost.Start() in y:\BuildAgent\work\31f8c64a6e8a2d7c\src\NServiceBus.Core\Hosting\GenericHost.cs:line 72
+2014-08-12 12:40:54,336 [1] INFO  NServiceBus.Configure [(null)] <(null)> - Invocation of NServiceBus.IWantToRunBeforeConfiguration completed in 0.15 s
+2014-08-12 12:40:54,508 [1] INFO  NServiceBus.Configure [(null)] <(null)> - Invocation of NServiceBus.Config.INeedInitialization completed in 0.00 s
+2014-08-12 12:40:54,523 [1] INFO  NServiceBus.Licensing.LicenseManager [(null)] <(null)> - Trial for Particular Service Platform is still active, trial expires on 8/25/2014. Configuring NServiceBus to run in trial mode.
+2014-08-12 12:40:54,601 [1] INFO  NServiceBus.Configure [(null)] <(null)> - Invocation of NServiceBus.INeedInitialization completed in 0.10 s
+2014-08-12 12:40:54,617 [1] INFO  NServiceBus.Features.FeatureInitializer [(null)] <(null)> - Default feature TimeoutManager has been explicitly disabled
+2014-08-12 12:40:54,617 [1] INFO  NServiceBus.Features.FeatureInitializer [(null)] <(null)> - Default feature SecondLevelRetries has been explicitly disabled
+2014-08-12 12:40:55,930 [1] INFO  NServiceBus.Configure [(null)] <(null)> - Invocation of NServiceBus.IWantToRunBeforeConfigurationIsFinalized completed in 1.33 s
+2014-08-12 12:40:55,961 [1] INFO  NServiceBus.Features.FeatureInitializer [(null)] <(null)> - Features: 
+Audit [4.6.1] - Enabled
+AutoSubscribe [4.6.1] - Enabled
+BinarySerialization [4.6.1] - Controlled by category Serializers
+BsonSerialization [4.6.1] - Controlled by category Serializers
+JsonSerialization [4.6.1] - Controlled by category Serializers
+XmlSerialization [4.6.1] - Controlled by category Serializers
+MsmqTransport [4.6.1] - Enabled
+Gateway [4.6.1] - Disabled
+TimeoutManager [4.6.1] - Disabled
+Sagas [4.6.1] - Disabled
+SecondLevelRetries [4.6.1] - Disabled
+StorageDrivenPublisher [4.6.1] - Disabled
+MessageDrivenSubscriptions [4.6.1] - Enabled
+
+2014-08-12 12:40:55,977 [1] INFO  NServiceBus.Features.FeatureInitializer [(null)] <(null)> - Feature categories: 
+   - Serializers
+       * BinarySerialization - Disabled
+       * BsonSerialization - Disabled
+       * JsonSerialization - Disabled
+       * XmlSerialization - Enabled
+
+2014-08-12 12:40:56,024 [1] INFO  NServiceBus.Unicast.Config.FinalizeUnicastBusConfiguration [(null)] <(null)> - Number of messages found: 4
+2014-08-12 12:40:56,024 [1] INFO  NServiceBus.Config.InfrastructureServices [(null)] <(null)> - Infrastructure service NServiceBus.AutomaticSubscriptions.IAutoSubscriptionStrategy was found in the container and will be used instead of the default
+2014-08-12 12:40:56,039 [1] INFO  NServiceBus.Configure [(null)] <(null)> - Invocation of NServiceBus.Config.IFinalizeConfiguration completed in 0.10 s
+2014-08-12 12:40:57,680 [1] INFO  NServiceBus.Installation.PerformanceMonitorUsersInstaller [(null)] <(null)> - Skipped adding user 'NSB_RICHH_8_1\Rich' to group 'Performance Monitor Users' because the user is already in group.

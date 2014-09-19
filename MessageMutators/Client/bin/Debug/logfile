@@ -1,0 +1,73 @@
+2014-07-13 10:33:46,067 [1] INFO  NServiceBus.Configure [(null)] <(null)> - Invocation of NServiceBus.IWantToRunBeforeConfiguration completed in 0.24 s
+2014-07-13 10:33:46,250 [1] INFO  NServiceBus.Configure [(null)] <(null)> - Invocation of NServiceBus.Config.INeedInitialization completed in 0.00 s
+2014-07-13 10:33:46,632 [1] INFO  NServiceBus.Licensing.LicenseManager [(null)] <(null)> - Expires on 07/30/2014 00:00:00
+2014-07-13 10:33:46,707 [1] INFO  NServiceBus.Configure [(null)] <(null)> - Invocation of NServiceBus.INeedInitialization completed in 0.45 s
+2014-07-13 10:33:46,725 [1] INFO  NServiceBus.Features.FeatureInitializer [(null)] <(null)> - Default feature TimeoutManager has been explicitly disabled
+2014-07-13 10:33:46,727 [1] INFO  NServiceBus.Features.FeatureInitializer [(null)] <(null)> - Default feature SecondLevelRetries has been explicitly disabled
+2014-07-13 10:33:48,336 [1] INFO  NServiceBus.Configure [(null)] <(null)> - Invocation of NServiceBus.IWantToRunBeforeConfigurationIsFinalized completed in 1.62 s
+2014-07-13 10:33:48,371 [1] INFO  NServiceBus.Features.FeatureInitializer [(null)] <(null)> - Features: 
+Audit [4.6.1] - Enabled
+AutoSubscribe [4.6.1] - Enabled
+BinarySerialization [4.6.1] - Controlled by category Serializers
+BsonSerialization [4.6.1] - Controlled by category Serializers
+JsonSerialization [4.6.1] - Controlled by category Serializers
+XmlSerialization [4.6.1] - Controlled by category Serializers
+MsmqTransport [4.6.1] - Enabled
+Gateway [4.6.1] - Disabled
+TimeoutManager [4.6.1] - Disabled
+Sagas [4.6.1] - Disabled
+SecondLevelRetries [4.6.1] - Disabled
+StorageDrivenPublisher [4.6.1] - Disabled
+MessageDrivenSubscriptions [4.6.1] - Enabled
+
+2014-07-13 10:33:48,389 [1] INFO  NServiceBus.Features.FeatureInitializer [(null)] <(null)> - Feature categories: 
+   - Serializers
+       * BinarySerialization - Disabled
+       * BsonSerialization - Disabled
+       * JsonSerialization - Disabled
+       * XmlSerialization - Enabled
+
+2014-07-13 10:33:48,436 [1] INFO  NServiceBus.Unicast.Config.FinalizeUnicastBusConfiguration [(null)] <(null)> - Number of messages found: 4
+2014-07-13 10:33:48,443 [1] INFO  NServiceBus.Config.InfrastructureServices [(null)] <(null)> - Infrastructure service NServiceBus.AutomaticSubscriptions.IAutoSubscriptionStrategy was found in the container and will be used instead of the default
+2014-07-13 10:33:48,450 [1] INFO  NServiceBus.Configure [(null)] <(null)> - Invocation of NServiceBus.Config.IFinalizeConfiguration completed in 0.11 s
+2014-07-13 10:33:48,856 [1] WARN  NServiceBus.Transports.Msmq.MsmqQueueCreator [(null)] <(null)> - Queue WIN-UAUT16GPEQA\private$\Client does not exist.
+2014-07-13 10:33:49,117 [1] INFO  NServiceBus.Installation.PerformanceMonitorUsersInstaller [(null)] <(null)> - Skipped adding user 'WIN-UAUT16GPEQA\Administrator' to group 'Performance Monitor Users' because the user is already in group.
+2014-07-13 10:36:19,635 [14] INFO  ValidationMessageMutator [(null)] <(null)> - Validation succeeded for message: CreateProductCommand: ProductId=XJ128, ProductName=Milk, ListPrice=4 SellEndDate=1/3/2012 12:00:00 AM Image (length)=7340032
+2014-07-13 10:37:11,437 [14] INFO  TransportMessageCompressionMutator [(null)] <(null)> - transportMessage.Body size before compression: 9787092
+2014-07-13 10:37:20,393 [14] INFO  TransportMessageCompressionMutator [(null)] <(null)> - transportMessage.Body size after compression: 9815
+2014-07-13 10:40:19,312 [1] INFO  NServiceBus.Configure [(null)] <(null)> - Invocation of NServiceBus.IWantToRunBeforeConfiguration completed in 0.21 s
+2014-07-13 10:40:19,510 [1] INFO  NServiceBus.Configure [(null)] <(null)> - Invocation of NServiceBus.Config.INeedInitialization completed in 0.00 s
+2014-07-13 10:40:19,873 [1] INFO  NServiceBus.Licensing.LicenseManager [(null)] <(null)> - Expires on 07/30/2014 00:00:00
+2014-07-13 10:40:19,941 [1] INFO  NServiceBus.Configure [(null)] <(null)> - Invocation of NServiceBus.INeedInitialization completed in 0.43 s
+2014-07-13 10:40:19,947 [1] INFO  NServiceBus.Features.FeatureInitializer [(null)] <(null)> - Default feature TimeoutManager has been explicitly disabled
+2014-07-13 10:40:19,950 [1] INFO  NServiceBus.Features.FeatureInitializer [(null)] <(null)> - Default feature SecondLevelRetries has been explicitly disabled
+2014-07-13 10:40:21,664 [1] INFO  NServiceBus.Configure [(null)] <(null)> - Invocation of NServiceBus.IWantToRunBeforeConfigurationIsFinalized completed in 1.73 s
+2014-07-13 10:40:21,703 [1] INFO  NServiceBus.Features.FeatureInitializer [(null)] <(null)> - Features: 
+Audit [4.6.1] - Enabled
+AutoSubscribe [4.6.1] - Enabled
+BinarySerialization [4.6.1] - Controlled by category Serializers
+BsonSerialization [4.6.1] - Controlled by category Serializers
+JsonSerialization [4.6.1] - Controlled by category Serializers
+XmlSerialization [4.6.1] - Controlled by category Serializers
+MsmqTransport [4.6.1] - Enabled
+Gateway [4.6.1] - Disabled
+TimeoutManager [4.6.1] - Disabled
+Sagas [4.6.1] - Disabled
+SecondLevelRetries [4.6.1] - Disabled
+StorageDrivenPublisher [4.6.1] - Disabled
+MessageDrivenSubscriptions [4.6.1] - Enabled
+
+2014-07-13 10:40:21,717 [1] INFO  NServiceBus.Features.FeatureInitializer [(null)] <(null)> - Feature categories: 
+   - Serializers
+       * BinarySerialization - Disabled
+       * BsonSerialization - Disabled
+       * JsonSerialization - Disabled
+       * XmlSerialization - Enabled
+
+2014-07-13 10:40:21,758 [1] INFO  NServiceBus.Unicast.Config.FinalizeUnicastBusConfiguration [(null)] <(null)> - Number of messages found: 4
+2014-07-13 10:40:21,764 [1] INFO  NServiceBus.Config.InfrastructureServices [(null)] <(null)> - Infrastructure service NServiceBus.AutomaticSubscriptions.IAutoSubscriptionStrategy was found in the container and will be used instead of the default
+2014-07-13 10:40:21,770 [1] INFO  NServiceBus.Configure [(null)] <(null)> - Invocation of NServiceBus.Config.IFinalizeConfiguration completed in 0.10 s
+2014-07-13 10:40:22,321 [1] INFO  NServiceBus.Installation.PerformanceMonitorUsersInstaller [(null)] <(null)> - Skipped adding user 'WIN-UAUT16GPEQA\Administrator' to group 'Performance Monitor Users' because the user is already in group.
+2014-07-13 10:48:49,566 [13] INFO  ValidationMessageMutator [(null)] <(null)> - Validation succeeded for message: CreateProductCommand: ProductId=XJ128, ProductName=Milk, ListPrice=4 SellEndDate=1/3/2012 12:00:00 AM Image (length)=7340032
+2014-07-13 10:48:53,285 [13] INFO  TransportMessageCompressionMutator [(null)] <(null)> - transportMessage.Body size before compression: 9787092
+2014-07-13 10:48:53,550 [13] INFO  TransportMessageCompressionMutator [(null)] <(null)> - transportMessage.Body size after compression: 9815
